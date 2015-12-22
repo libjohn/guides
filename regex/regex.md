@@ -94,7 +94,15 @@ http://url.io/regex
 		3. Reset the multiline flag   
 		
  3. **Exercise 2** -- To die upon a kiss
-    1. **[Open Othello text in RegExr](http://www.regexr.com/3c7ha)**  
+    1. **[Open Othello text in RegExr](http://www.regexr.com/3c7ha)**   
+    2. ** Exploring honesty**
+        1. Turn on the case insensitive flag
+        2. `honour` -- 14 matches
+		3. `honou?r` -- optional "u"
+		4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
+		5. Turn off case insensitive flag
+		
+	
  4. Exercise 3
  5. Exercise 4
 

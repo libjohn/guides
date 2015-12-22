@@ -15,13 +15,18 @@ PreRequisites:  **Bring YOUR Laptop**
 * Data & Visualization Services
  * Who We Are
 * This workshop is **completely based on the good work from [Intersect](http://www.intersect.org.au/course-resources)** in Australia
- * Presentation:  [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) of the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
+ * Presentation:  Slides from the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
  * Exercises:  Based on slides 15-18
 * Hands-on / Exercises
-* CLOSINGG
+* Closing
  * Feedback Form
  * Go forth making expressions and finding patters with regularity
 
+---
+ 
+## Slides
+* [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) form [Intersect](http://www.intersect.org.au/course-resources)
+ 
 ---  
 
 ## Exercises

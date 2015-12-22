@@ -46,12 +46,14 @@ http://url.io/regex
        2. `Avian` -- 12 matches
        3. `avian` -- with the ignore case flag -- 14 matches   
 	   <img src=http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0>  &nbsp; &nbsp; <img src=http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E>  &nbsp; &nbsp; <img src=http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0>
-       4. Clear the case insenstive flag
+       4. Clear the case insenstive flag   
+	   
     5. **Find only capitalized** words   
 	*Some characters (e.g. " or \[ ) don't have a literal meaning.  They are meta characters*
 	   1. `[A-Z]\w*` -- character classes \[\] are denonted by square brackets; wildcards include \* , \+ , ? 
 	   2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-	   3. `\b[A-Z]+\b -- Because you to match on a word boundary using an anchor class.  This allows you to match the whole word.
+	   3. `\b[A-Z]+\b -- Because you to match on a word boundary using an anchor class:  (\\b)   
+	   \\b allows you to match the whole word.
  3. Exercise 2
  4. Exercise 3
  5. Exercise 4

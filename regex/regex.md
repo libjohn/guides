@@ -57,7 +57,7 @@ http://v.gd/intro_regex
 	   1. `[A-Z]\w*` -- character classes \[\] are denonted by square brackets; wildcards include \* , \+ , ?   
 	   <img src=http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY>
 	   2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-	   3. `\b[A-Z]+\b -- Because you have to match on a word boundary using an anchor class:  \\b
+	   3. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  \\b
 	   4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets \{\} allow for arbitrary repetition   
 	   
 	6. **Match the last words of sentences**   
@@ -124,8 +124,9 @@ http://v.gd/intro_regex
 		2. `^.*\?` -- from start of line to question mark
 		3. Turn off multiline matching   
 		
- 4. Exercise 3
- 5. Exercise 4
+ 4. Exercises 3 & 4
+  * The good folks at [Intersect Slide Deck](http://www.intersect.org.au/course-resources) have two more exercises avaiable in their handout materials
+
 
 ---  
 

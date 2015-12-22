@@ -53,15 +53,45 @@ http://url.io/regex
 	   1. `[A-Z]\w*` -- character classes \[\] are denonted by square brackets; wildcards include \* , \+ , ?   
 	   <img src=http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY>
 	   2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-	   3. `\b[A-Z]+\b -- Because you have to match on a word boundary using an anchor class:  (\\b)
+	   3. `\b[A-Z]+\b -- Because you have to match on a word boundary using an anchor class:  \\b
 	   4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets \{\} allow for arbitrary repetition   
 	   
 	6. **Match the last words of sentences**   
-	We can restore a letter's literal meaning by escaping it
+	*We can restore a letter's literal meaning by escaping it*
 	   1. `\w+.` -- This doesn't work because "." matches every character
 	   2. `\w+\.` -- We escape the period "." with a the escape character \\
-	   3. `\w+\.\s` -- This time we stop the email address at the end by matching the whitespace \\s   
+	   3. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using \\s allows us to stop matching email address by matching whitespace \\s      
+	
+	7. **Find all years**   
+	*Note the pipe charcter "\" -- alternation, alternatives.  Note the "()" grouping*   
+	   1. `\d\d\d\d` -- a lot of matches here
+	   2. `\d{4}` -- more suscinct but has the same meaning as above
+	   3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives
+	   4. `\b(19|20)\d\d\b` -- better and workds for yearss in the twenties and twenty-first centuries   
+
+	8. **Pone numbers**   
+	*Note: escape the parenthesis \\\(*   
+	*Note: ? indicates optionality matching zero or one occurence*
+	   1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
+	   2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive   
 	   
+	9. **Email addresses**
+	   1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
+	   IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
+	   **SUGGESTION**, ask the regexr community:
+	      1. left-hand sidebar
+		  2. click Community
+		  3. search on the term 'email'
+		  4. From there, I found this one   
+		  `/^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm`   
+		  Wow!  That saved a lot of time!   
+		  
+	10. **Section headings**   
+    Note how \+ can be applied to a group  
+        1. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
+		2. `^(\w+ ?)+$` -- match repeating words + optional space
+		3. Reset the multiline flag   
+		
  3. Exercise 2
  4. Exercise 3
  5. Exercise 4

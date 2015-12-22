@@ -93,7 +93,8 @@ http://url.io/regex
 		2. `^(\w+ ?)+$` -- match repeating words + optional space
 		3. Reset the multiline flag   
 		
- 3. Exercise 2
+ 3. **Exercise 2** -- To die upon a kiss
+    1. **[Open Othello text in RegExr](http://www.regexr.com/3c7ha)**  
  4. Exercise 3
  5. Exercise 4
 

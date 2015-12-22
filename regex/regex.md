@@ -35,7 +35,7 @@ http://url.io/regex
 
 ## Hands-on
 
-1. Introduction to [RegExr](http://regexr.com)
+1. Introduction to RegExr.com 
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
     3. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) 

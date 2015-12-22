@@ -40,7 +40,7 @@ http://url.io/regex
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
     3. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) 
     4. Finding all literal words  (simple searches are just like traditional find & replace)
-       1. `avian` -- 2 matches  ![avaian](http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk)
+       1. `avian` -- 2 matches  <img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk">
        2. `Avian` -- 12 matches
        3. `avian` -- with the ignore case flag -- 14 matches
        4. Clear the case insenstive flag

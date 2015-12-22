@@ -37,8 +37,8 @@ http://url.io/regex
 
 1. Introduction to RegExr.com 
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
- 2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
-    3. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) 
+ 2. **Exercise 1** -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
+    3. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
     4. **Find all literal words**  
 	*Simple searches are just like traditional find & replace*
        1. `avian` -- 2 matches   
@@ -73,17 +73,18 @@ http://url.io/regex
 	*Note: escape the parenthesis \\\(*   
 	*Note: ? indicates optionality matching zero or one occurence*
 	   1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
-	   2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive   
+	   2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
+       3. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for \. instead of - as a separator
 	   
 	9. **Email addresses**
 	   1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
 	   IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
-	   **SUGGESTION**, ask the regexr community:
+	   **SUGGESTION**: ask the RegExr community:
 	      1. left-hand sidebar
 		  2. click Community
 		  3. search on the term 'email'
 		  4. From there, I found this one   
-		  `/^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm`   
+		  `/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
 		  Wow!  That saved a lot of time!   
 		  
 	10. **Section headings**   

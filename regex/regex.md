@@ -30,6 +30,10 @@ http://v.gd/intro_regex
  
 ## Regular Expressions -- an Introduction
 * [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
+* All slides and exercises are the intelectual work of the good folks at Intersect
+* Slides and exercises are shared with permission
+* Please attribute [Intersect](http://www.intersect.org.au/course-resources)
+
  
 ---  
 

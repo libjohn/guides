@@ -42,7 +42,6 @@ PreRequisites:  **Bring YOUR Laptop**
 Data Management & Data Analysis Consultant   
 Data & Visualization Services   
 Duke University Libraries   
-
 * Other Guides & Workbooks
  * DVS Guides Page
  * Other Guides by John Little

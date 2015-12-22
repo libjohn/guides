@@ -52,11 +52,11 @@ Data Management & Data Analysis Consultant
 Data & Visualization Services   
 Duke University Libraries   
 * **Other Guides & Workbooks**
- * DVS Guides Page
- * Other Guides by John Little
-  * OpenRefine -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
-  * Web Scraping -- Gathering Data from the Web
-  * Regular Expressions (RegEx) -- Introduction to pattern matching and pattern manipulation
+ * [DVS Guides Page](http://library.duke.edu/data/guides)
+ * Workshop/Workbook Guides by John Little
+  * [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
+  * [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
+  * Regular Expressions (RegEx) http://foo.shoegoo.edu  -- Introduction to pattern matching and pattern manipulation
 
 
 

@@ -17,7 +17,10 @@ PreRequisites:  **Bring YOUR Laptop**
 * This workshop is **completely based on the good work from [Intersect](http://www.intersect.org.au/course-resources)** in Australia
  * Presentation:  [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) of the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
  * Exercises:  Based on slides 15-18
-* Exercise   
+* Hands-on / Exercises
+* CLOSINGG
+ * Feedback Form
+ * Go forth making expressions and finding patters with regularity
 
 ---  
 

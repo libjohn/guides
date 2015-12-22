@@ -5,11 +5,11 @@ Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Wo
 Meeti in the DVS Workshop Room  -- [floormap](http://library.duke.edu/edge/spaces)  
 http://url.io/regex  
 
-PreRequisites:  
+## PreRequisites
 * **You Must Preregister** 
 * **Bring YOUR Laptop**
 
-***  **DRAFT  12/22/2015**  ***   
+***  **DRAFT  12/22/2015**  **DRAFT  12/22/2015**  **DRAFT  12/22/2015**  ***   
 
 --------
 

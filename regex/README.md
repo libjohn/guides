@@ -1,1 +1,1 @@
-The main file in this sub-repository is [regex.md](/regex.md/)
+The main file in this sub-repository is [regex.md](/regex/regex.md)

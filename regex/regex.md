@@ -28,7 +28,7 @@ http://url.io/regex
 
 ---
  
-## Slides
+## Regular Expressions -- an Introduction
 * [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
  
 ---  
@@ -36,10 +36,20 @@ http://url.io/regex
 ## Hands-on
 
 1. Introduction to [RegExr](http://regexr.com)
-2. Exercise 1
-3. Exercise 2
-4. Exercise 3
-5. Exercise 4
+1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
+ 2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
+  1. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)
+  2. Finding all literal words  (simple searches are just like traditional find & replace)
+   1. 	avian 
+   -- 2 matches
+   2. 	Avian 
+   -- 12 matches
+   3. 	avian 
+   with the ignore case flag -- 14 matches
+   4. Clear the case insenstive flag
+ 3. Exercise 2
+ 4. Exercise 3
+ 5. Exercise 4
 
 ---  
 

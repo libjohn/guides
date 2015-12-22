@@ -41,9 +41,10 @@ http://url.io/regex
     3. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) 
     4. Finding all literal words  (simple searches are just like traditional find & replace)
        1. `avian` -- 2 matches   
-	   <img align=right src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img align=right src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
+	   <img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
        2. `Avian` -- 12 matches
-       3. `avian` -- with the ignore case flag -- 14 matches
+       3. `avian` -- with the ignore case flag -- 14 matches   
+	   <img src=http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0>  &nbsp; &nbsp; <img src=http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E>
        4. Clear the case insenstive flag
  3. Exercise 2
  4. Exercise 3

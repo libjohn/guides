@@ -3,7 +3,7 @@ A Workshop and workbook
 
 Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news)  
 Meeti in the DVS Workshop Room  -- [floormap](http://library.duke.edu/edge/spaces)  
-http://url.io/regex  
+http://v.gd/intro_regex
 
 ## PreRequisites
 * **You Must Preregister** 
@@ -101,7 +101,7 @@ http://url.io/regex
     2. **Exploring honesty**
         1. Turn on the case insensitive flag
         2. `honour` -- 14 matches
-		3. `honou?r` -- optional "u"
+		3. `honou?r` -- optional "u"  and still 14 matches
 		4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
 		5. Turn off case insensitive flag
 		

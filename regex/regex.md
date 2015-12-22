@@ -29,7 +29,7 @@ http://url.io/regex
 ---
  
 ## Slides
-* [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) form [Intersect](http://www.intersect.org.au/course-resources)
+* [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
  
 ---  
 

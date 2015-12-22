@@ -40,10 +40,9 @@ http://url.io/regex
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
    1. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)
    2. Finding all literal words  (simple searches are just like traditional find & replace)
-     1. 	avian 
-     -- 2 matches
-     2. 	Avian 
-     -- 12 matches
+     1. `avian` -- 2 matches
+     2.    Avian     
+     3. -- 12 matches
      3. 	avian 
      with the ignore case flag -- 14 matches
      4. Clear the case insenstive flag

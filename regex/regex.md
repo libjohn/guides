@@ -35,13 +35,13 @@ PreRequisites:  **Bring YOUR Laptop**
 
 ## Thank You for Attending
 
-* Feedback Forum   
-* Presenter   
+* **Please** complete the **Feedback Form**
+* **Presenter**
 **John.Little@Duke.edu**   
 Data Management & Data Analysis Consultant   
 Data & Visualization Services   
 Duke University Libraries   
-* Other Guides & Workbooks
+* **Other Guides & Workbooks**
  * DVS Guides Page
  * Other Guides by John Little
   * OpenRefine -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping

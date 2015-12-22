@@ -38,22 +38,12 @@ http://url.io/regex
 1. Introduction to [RegExr](http://regexr.com)
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
-   1. are there other reasons to believe this isn't working
-   
-   1.  I feel like this might be it   
-   
-   1.  But you cannot say anything otherwise  
- 
-   2. there must be more to it than this.
-   3. because why else would it stop working   
-   4. maybe it's the spaces afterwards   
-   2. more songs about buildings and cheese
-   3. foo [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) foo foo
-   4. Finding all literal words  (simple searches are just like traditional find & replace)
-     1. `avian` -- 2 matches
-     2. `Avian` -- 12 matches
-     3. `avian` -- with the ignore case flag -- 14 matches
-     4. Clear the case insenstive flag
+    3. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) foo foo
+    4. Finding all literal words  (simple searches are just like traditional find & replace)
+       1. `avian` -- 2 matches
+       2. `Avian` -- 12 matches
+       3. `avian` -- with the ignore case flag -- 14 matches
+       4. Clear the case insenstive flag
  3. Exercise 2
  4. Exercise 3
  5. Exercise 4

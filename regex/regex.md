@@ -102,7 +102,21 @@ http://url.io/regex
 		4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
 		5. Turn off case insensitive flag
 		
-	
+	3. **Acts and Scenes**
+	    1. Turn on multiline matching
+		2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals
+		3. turn off multiline matching   
+
+    4. **Major Parts**
+        1. Turn on multiline matching
+        2. `^[A-Z]+$`
+		3. turn off multiline matching   
+		
+    5. **Questions**
+	    1. Turn on multiline matching
+		2. `^.*\?` -- from start of line to question mark
+		3. Turn off multiline matching   
+		
  4. Exercise 3
  5. Exercise 4
 

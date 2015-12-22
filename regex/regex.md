@@ -38,7 +38,7 @@ http://url.io/regex
 1. Introduction to [RegExr](http://regexr.com)
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
-   1. foo [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)
+   1. foo [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi) foo
    2. Finding all literal words  (simple searches are just like traditional find & replace)
      1. `avian` -- 2 matches
      2. `Avian` -- 12 matches

@@ -39,6 +39,11 @@ http://url.io/regex
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
  2. Exercise 1 -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
    1. are there other reasons to believe this isn't working
+   
+   1.  I feel like this might be it   
+   
+   1.  But you cannot say anything otherwise  
+ 
    2. there must be more to it than this.
    3. because why else would it stop working   
    4. maybe it's the spaces afterwards   

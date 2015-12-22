@@ -94,8 +94,11 @@ http://url.io/regex
 		3. Reset the multiline flag   
 		
  3. **Exercise 2** -- To die upon a kiss
-    1. **[Open Othello text in RegExr](http://www.regexr.com/3c7ha)**   
-    2. ** Exploring honesty**
+    1. **Preparation**   
+	    1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
+		2. Paste full text into RegExr   
+		
+    2. **Exploring honesty**
         1. Turn on the case insensitive flag
         2. `honour` -- 14 matches
 		3. `honou?r` -- optional "u"

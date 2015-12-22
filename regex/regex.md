@@ -15,7 +15,7 @@ PreRequisites:  **Bring YOUR Laptop**
 * Data & Visualization Services
  * Who We Are
 * This workshop is **completely based on the good work from [Intersect](http://www.intersect.org.au/course-resources)** in Australia
- * Presentation:  Slides 3-13 of the Intersect Slide Deck
+ * Presentation:  [Slides 3-13](/Intersect PDF Materials/) of the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
  * Exercises:  Based on slides 15-18
 * Exercise   
 

@@ -2,10 +2,12 @@
 A Workshop and workbook
 
 Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news)  
-Workshop Location:  DVS Workshop Room  -- [floormap](http://library.duke.edu/edge/spaces)  
+Meeti in the DVS Workshop Room  -- [floormap](http://library.duke.edu/edge/spaces)  
 http://url.io/regex  
 
-PreRequisites:  **Bring YOUR Laptop**
+PreRequisites:  
+* **You Must Preregister** 
+* **Bring YOUR Laptop**
 
 ***  **DRAFT  12/22/2015**  ***   
 

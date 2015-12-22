@@ -52,8 +52,15 @@ http://url.io/regex
 	*Some characters (e.g. " or \[ ) don't have a literal meaning.  They are meta characters*
 	   1. `[A-Z]\w*` -- character classes \[\] are denonted by square brackets; wildcards include \* , \+ , ? 
 	   2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-	   3. `\b[A-Z]+\b -- Because you to match on a word boundary using an anchor class:  (\\b)   
-	   \\b allows you to match the whole word.
+	   3. `\b[A-Z]+\b -- Because you have to match on a word boundary using an anchor class:  (\\b)
+	   4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets \{\} allow for arbitrary repetition   
+	   
+	6. **Match the last words of sentences**   
+	We can restore a letter's literal meaning by escaping it
+	   1. `\w+.` -- This doesn't work because "." matches every character
+	   2. `\w+\.` -- We escape the period "." with a the escape character \\
+	   3. `\w+\.\s` -- This time we stop the email address at the end by matching the whitespace \\s   
+	   
  3. Exercise 2
  4. Exercise 3
  5. Exercise 4

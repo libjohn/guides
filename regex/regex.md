@@ -35,8 +35,7 @@ PreRequisites:  **Bring YOUR Laptop**
 
 ## Thank You for Attending
 
-* Feedback Forum
-
+* Feedback Forum   
 * Presenter   
 **John.Little@Duke.edu**   
 Data Management & Data Analysis Consultant   

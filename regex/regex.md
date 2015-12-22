@@ -49,7 +49,7 @@ http://url.io/regex
        4. Clear the case insenstive flag
     5. **Find only capitalized** words   
 	*Some characters (e.g. \" or \[ ) don't have a literal meaning.  They are meta characters*
-	   1. `[A-Z]\w*` -- character classes are deonted by square brackets; wildcards include  
+	   1. `\[A-Z\]\\w\*` -- character classes are deonted by square brackets; wildcards include \* , \+ , ? 
  3. Exercise 2
  4. Exercise 3
  5. Exercise 4

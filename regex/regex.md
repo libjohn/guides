@@ -22,7 +22,7 @@ http://v.gd/intro_regex (January 2016)
 	* Exercises
 * Closing
 	* Feedback Form
-	* Go forth making expressions and finding patters with regularity
+	* Go forth making expressions and finding patterns with regularity
 
 ---
  

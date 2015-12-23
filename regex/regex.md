@@ -9,8 +9,6 @@ http://v.gd/intro_regex (January 2016)
 * **You Must Preregister** 
 * **Bring YOUR Laptop**
 
-***  **DRAFT  12/22/2015** *** **DRAFT  12/22/2015** *** **DRAFT  12/22/2015**  ***   
-
 --------
 
 ## Outline
@@ -100,7 +98,7 @@ http://v.gd/intro_regex (January 2016)
 	3. **Exercise 2** -- To die upon a kiss
 		1. **Preparation**   
 			1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
-			2. Paste full text into RegExr   
+			2. Copy/Paste full text into RegExr *Text* panel   
 		
 		2. **Exploring honesty**
 			1. Turn on the case insensitive flag
@@ -143,7 +141,7 @@ http://v.gd/intro_regex (January 2016)
 		1. **Preparation**
 			1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)   
 			*Please note this is actual twitter stream data about a politician, the tweets may be offensive*
-		2. **Capturing #hashtags, @twitter-handles
+		2. **Capturing #hashtags, @twitter-handles**
 			1. `#\w\w+` -- #hastag
 			2. `@\w\w+` -- @twitter-handle
 			3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10   

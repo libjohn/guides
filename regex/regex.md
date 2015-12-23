@@ -66,66 +66,66 @@ http://v.gd/intro_regex (January 2016)
 			2. `\w+\.` -- We escape the period "." with a the escape character \\
 			3. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using \\s allows us to stop matching email address by matching whitespace \\s      
 	
-	7. **Find all years**   
-	*Note the pipe character "\" -- alternation, alternatives.  Note the "()" grouping*   
-		1. `\d\d\d\d` -- a lot of matches here
-		2. `\d{4}` -- more susccinct but has the same meaning as above
-		3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives
-		4. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
+		7. **Find all years**   
+		*Note the pipe character "\" -- alternation, alternatives.  Note the "()" grouping*   
+			1. `\d\d\d\d` -- a lot of matches here
+			2. `\d{4}` -- more susccinct but has the same meaning as above
+			3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives
+			4. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
-	8. **Pone numbers**   
-	*Note: escape the parenthesis \\\(*   
-	*Note: ? indicates optionality matching zero or one occurrence*
-		1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
-		2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
-		3. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for \. instead of - as a separator
+		8. **Pone numbers**   
+		*Note: escape the parenthesis \\\(*   
+		*Note: ? indicates optionality matching zero or one occurrence*
+			1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
+			2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
+			3. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for \. instead of - as a separator
 	   
-	9. **Email addresses**
-		1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
-		IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
-		**SUGGESTION**: ask the RegExr community:
-			1. left-hand sidebar
-			2. click Community
-			3. search on the term 'email'
-			4. From there, I found this one   
-			`/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
-			Wow!  That saved a lot of time!   
+		9. **Email addresses**
+			1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
+			IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
+			**SUGGESTION**: ask the RegExr community:
+				1. left-hand sidebar
+				2. click Community
+				3. search on the term 'email'
+				4. From there, I found this one   
+				`/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
+				Wow!  That saved a lot of time!   
 		  
-	10. **Section headings**   
-	Note how \+ can be applied to a group  
-		1. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
-		2. `^(\w+ ?)+$` -- match repeating words + optional space
-		3. Reset the multiline flag   
+		10. **Section headings**   
+		Note how \+ can be applied to a group  
+			1. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
+			2. `^(\w+ ?)+$` -- match repeating words + optional space
+			3. Reset the multiline flag   
 		
-  3. **Exercise 2** -- To die upon a kiss
-     1. **Preparation**   
-         1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
-         2. Paste full text into RegExr   
+	3. **Exercise 2** -- To die upon a kiss
+		1. **Preparation**   
+			1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
+			2. Paste full text into RegExr   
 		
-    2. **Exploring honesty**
-         1. Turn on the case insensitive flag
-         2. `honour` -- 14 matches
-         3. `honou?r` -- optional "u"  and still 14 matches
-         4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
-         5. Turn off case insensitive flag
+		2. **Exploring honesty**
+			1. Turn on the case insensitive flag
+			2. `honour` -- 14 matches
+			3. `honou?r` -- optional "u"  and still 14 matches
+			4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
+			5. Turn off case insensitive flag
 		
-    3. **Acts and Scenes**
-      1. Turn on multiline matching
-      2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals
-      3. turn off multiline matching   
+		3. **Acts and Scenes**
+			1. Turn on multiline matching
+			2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals
+			3. turn off multiline matching   
 
-    4. **Major Parts**
-      1. Turn on multiline matching
-      2. `^[A-Z]+$`
-      3. turn off multiline matching   
+		4. **Major Parts**
+			1. Turn on multiline matching
+			2. `^[A-Z]+$`
+			3. turn off multiline matching   
 		
-    5. **Questions**
-      1. Turn on multiline matching
-      2. `^.*\?` -- from start of line to question mark
-      3. Turn off multiline matching   
+		5. **Questions**
+			1. Turn on multiline matching
+			2. `^.*\?` -- from start of line to question mark
+			3. Turn off multiline matching   
 		
-  4. Exercises 3 & 4
-  * The good folks at [Intersect](http://www.intersect.org.au/course-resources) have two more exercises available in their handout materials
+	4. Exercises 3 & 4
+	* The good folks at [Intersect](http://www.intersect.org.au/course-resources) have two more exercises available in their handout materials
 
 ---  
 

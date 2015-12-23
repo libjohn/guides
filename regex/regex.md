@@ -9,7 +9,7 @@ http://v.gd/intro_regex (January 2016)
 * **You Must Preregister** 
 * **Bring YOUR Laptop**
 
-***  **DRAFT  12/22/2015**  **DRAFT  12/22/2015**  **DRAFT  12/22/2015**  ***   
+***  **DRAFT  12/22/2015** *** **DRAFT  12/22/2015** *** **DRAFT  12/22/2015**  ***   
 
 --------
 

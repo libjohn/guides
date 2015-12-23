@@ -1,5 +1,5 @@
 # Introduction to Regular Expressions
-A Workshop and workbook
+A workshop and workbook
 
 Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news)  
 Meet in the DVS Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
@@ -87,7 +87,7 @@ http://v.gd/intro_regex (January 2016)
 				3. search on the term 'email'
 				4. From there, I found this one   
 				`/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
-				Wow!  That saved a lot of time!   
+				Wow!  That saved a lot of time and thinking.  You can rate useful contributions from the community to privilege useful contributions.
 		  
 		10. **Section headings**   
 		Note how \+ can be applied to a group  

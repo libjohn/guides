@@ -15,16 +15,16 @@ http://v.gd/intro_regex (January 2016)
 
 ## Outline
 * Data & Visualization Services
-  * Who We Are
+	* Who We Are
 * This workshop is **completely based on the good work from [Intersect](http://www.intersect.org.au/course-resources)** in Australia
-  * Presentation:  Slides from the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
-  * Exercises:  Based on slides 15-18
+	* Presentation:  Slides from the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
+	* Exercises:  Based on slides 15-18
 * Hands-on
-  * Introduction to RegExr
-  * Exercises
+	* Introduction to RegExr
+	* Exercises
 * Closing
-  * Feedback Form
-  * Go forth making expressions and finding patters with regularity
+	* Feedback Form
+	* Go forth making expressions and finding patters with regularity
 
 ---
  
@@ -82,7 +82,7 @@ http://v.gd/intro_regex (January 2016)
 	   
 		9. **Email addresses**
 			1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
-			IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
+			It's also likely to miss valid email addresses like luc.small@intersect.org.au   
 			**SUGGESTION**: ask the RegExr community:
 				1. left-hand sidebar
 				2. click Community
@@ -138,11 +138,11 @@ Data Management & Data Analysis Consultant
 Data & Visualization Services   
 Duke University Libraries   
 * **Other Guides & Workbooks**
-  * [DVS Guides Page](http://library.duke.edu/data/guides)
-  * Workshop/Workbook Guides by John Little
-   * [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
-   * [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
-   * Regular Expressions (RegEx) http://foo.shoegoo.edu  -- Introduction to pattern matching and pattern manipulation
+	* [DVS Guides Page](http://library.duke.edu/data/guides)
+	* Workshop/Workbook Guides by John Little
+		* [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
+		* [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
+		* Regular Expressions (RegEx) http://foo.shoegoo.edu  -- Introduction to pattern matching and pattern manipulation
 
 
 

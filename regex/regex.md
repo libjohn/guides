@@ -41,30 +41,30 @@ http://v.gd/intro_regex (January 2016)
 
 1. Introduction to RegExr.com 
 1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
-  1. **Exercise 1** -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
-     1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
-     2. **Find all literal words**  
-     *Simple searches are just like traditional find & replace*
-         1. `avian` -- 2 matches   
-	     <img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
-         2. `Avian` -- 12 matches
-         3. `avian` -- with the ignore case flag -- 14 matches   
-	     <img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
-         4. Clear the case insensitive flag   
+	1. **Exercise 1** -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
+		1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
+		2. **Find all literal words**  
+		*Simple searches are just like traditional find & replace*
+			1. `avian` -- 2 matches   
+			<img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
+			2. `Avian` -- 12 matches
+			3. `avian` -- with the ignore case flag -- 14 matches   
+			<img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
+			4. Clear the case insensitive flag   
 	   
-     5. **Find only capitalized** words   
-     *Some characters (e.g. " or \[ ) don't have a literal meaning.  They are meta characters*
-         1. `[A-Z]\w*` -- character classes \[ \] are denoted by square brackets; wildcards include \* , \+ , ?   
-	     <img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">
-         2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-         3. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  \\b
-         4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets \{\} allow for arbitrary repetition   
+		5. **Find only capitalized** words   
+		*Some characters (e.g. " or \[ ) don't have a literal meaning.  They are meta characters*
+			1. `[A-Z]\w*` -- character classes \[ \] are denoted by square brackets; wildcards include \* , \+ , ?   
+			<img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">
+			2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
+			3. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  \\b
+			4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets \{\} allow for arbitrary repetition   
 	   
-	6. **Match the last words of sentences**   
-     *We can restore a letter's literal meaning by escaping it*
-		1. `\w+.` -- This doesn't work because "." matches every character
-		2. `\w+\.` -- We escape the period "." with a the escape character \\
-		3. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using \\s allows us to stop matching email address by matching whitespace \\s      
+		6. **Match the last words of sentences**   
+		*We can restore a letter's literal meaning by escaping it*
+			1. `\w+.` -- This doesn't work because "." matches every character
+			2. `\w+\.` -- We escape the period "." with a the escape character \\
+			3. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using \\s allows us to stop matching email address by matching whitespace \\s      
 	
 	7. **Find all years**   
 	*Note the pipe character "\" -- alternation, alternatives.  Note the "()" grouping*   
@@ -97,7 +97,7 @@ http://v.gd/intro_regex (January 2016)
 		2. `^(\w+ ?)+$` -- match repeating words + optional space
 		3. Reset the multiline flag   
 		
-	3. **Exercise 2** -- To die upon a kiss
+  3. **Exercise 2** -- To die upon a kiss
      1. **Preparation**   
          1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
          2. Paste full text into RegExr   

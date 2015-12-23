@@ -124,9 +124,30 @@ http://v.gd/intro_regex (January 2016)
 			2. `^.*\?` -- from start of line to question mark
 			3. Turn off multiline matching   
 		
-	4. Exercises 3 & 4
-	* The good folks at [Intersect](http://www.intersect.org.au/course-resources) have two more exercises available in their handout materials
-
+	4. **Exercise 3** -- Manipulating captured patterns
+		1. **Preparation**
+			1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
+			2. Click the "List in text area" button, copy and paste the names list to your buffer
+			3. Replace the text in the RegExr *Text* panel with the random names
+			4. Click the grey *Substitution* bar at the bottom of RegExr
+			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel   
+			
+		2. **Capture and manipulate text**   
+		*Notice how $1 and $2 are used to recall the text captured within the parenthesis groupings \(  \)*
+			1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names
+			2. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane \/     \/)
+			3. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
+			4. `<b>$2</b>, $1` -- Bold the last name and add a coma   
+			
+	5. **Exercise 4** -- Handling twitter data
+		1. **Preparation**
+			1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)   
+			*Please note this is actual twitter stream data about a politician, the tweets may be offensive*
+		2. **Capturing #hashtags, @twitter-handles
+			1. `#\w\w+` -- #hastag
+			2. `@\w\w+` -- @twitter-handle
+			3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10   
+		
 ---  
 
 ## Thank You for Attending

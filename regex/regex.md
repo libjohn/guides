@@ -73,31 +73,31 @@ http://v.gd/intro_regex (January 2016)
 		3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives
 		4. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
-   8. **Pone numbers**   
-   *Note: escape the parenthesis \\\(*   
-   *Note: ? indicates optionality matching zero or one occurrence*
-     1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
-     2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
-     3. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for \. instead of - as a separator
+	8. **Pone numbers**   
+	*Note: escape the parenthesis \\\(*   
+	*Note: ? indicates optionality matching zero or one occurrence*
+		1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
+		2. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
+		3. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for \. instead of - as a separator
 	   
-   9. **Email addresses**
-     1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
-     IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
-     **SUGGESTION**: ask the RegExr community:
-         1. left-hand sidebar
-         2. click Community
-         3. search on the term 'email'
-         4. From there, I found this one   
-         `/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
-         Wow!  That saved a lot of time!   
+	9. **Email addresses**
+		1. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
+		IT's also likely to miss valid email addresses like luc.small@intersect.org.au   
+		**SUGGESTION**: ask the RegExr community:
+			1. left-hand sidebar
+			2. click Community
+			3. search on the term 'email'
+			4. From there, I found this one   
+			`/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
+			Wow!  That saved a lot of time!   
 		  
-   10. **Section headings**   
-   Note how \+ can be applied to a group  
-     1. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
-     2. `^(\w+ ?)+$` -- match repeating words + optional space
-     3. Reset the multiline flag   
+	10. **Section headings**   
+	Note how \+ can be applied to a group  
+		1. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
+		2. `^(\w+ ?)+$` -- match repeating words + optional space
+		3. Reset the multiline flag   
 		
-  3. **Exercise 2** -- To die upon a kiss
+	3. **Exercise 2** -- To die upon a kiss
      1. **Preparation**   
          1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
          2. Paste full text into RegExr   

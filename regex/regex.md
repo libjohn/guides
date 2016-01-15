@@ -161,7 +161,7 @@ Duke University Libraries
 	* Workshop/Workbook Guides by John Little
 		* [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
 		* [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
-		* Regular Expressions (RegEx) http://foo.shoegoo.edu  -- Introduction to pattern matching and pattern manipulation
+		* [Regular Expressions (RegEx)](https://github.com/libjohn/guides/blob/master/regex/regex.md) -- Introduction to pattern matching and pattern manipulation
 		
 --- 
 

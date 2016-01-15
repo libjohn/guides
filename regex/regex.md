@@ -165,8 +165,10 @@ Duke University Libraries
 		
 --- 
 
-## Data, presentation, and handouts are shareable under CC BY-NC-SA license - https://creativecommons.org/licenses/by-nc-sa/4.0/
-![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
+### Shareable under CC BY-NC-SA license 
+
+Data, presentation, and handouts are shareable under CC BY-NC-SA license - https://creativecommons.org/licenses/by-nc-sa/4.0/
+![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License")
 
 
 

@@ -162,6 +162,13 @@ Duke University Libraries
 		* [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
 		* [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
 		* Regular Expressions (RegEx) http://foo.shoegoo.edu  -- Introduction to pattern matching and pattern manipulation
+		
+--- 
+
+## Data, presentation, and handouts are shareable under CC BY-NC-SA license - https://creativecommons.org/licenses/by-nc-sa/4.0/
+![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
+
+
 
 
 

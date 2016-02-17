@@ -128,10 +128,10 @@ http://v.gd/intro_regex (January 2016)
 			2. Click the "List in text area" button, copy and paste the names list to your buffer
 			3. Replace the text in the RegExr *Text* panel with the random names
 			4. Click the grey *Substitution* bar at the bottom of RegExr
-			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel; in that space type `$1 $2`
+			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel
 			
 		2. **Capture and manipulate text**   
-		*Notice how $1 and $2 are used to recall the text captured within the parenthesis groupings \(  \)*
+		*In the next steps, *notice* how $1 and $2 will be used to recall the text captured within the parenthesis groupings \(  \)*
 			1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names
 			2. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane \/     \/)
 			3. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'

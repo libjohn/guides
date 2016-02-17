@@ -142,15 +142,15 @@ http://v.gd/intro_regex (January 2016)
 			1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)   
 			*Please note this is actual twitter stream data about a politician, the tweets may be offensive*
 		2. **Capturing #hashtags, @twitter-handles**
-			1. `#\w\w+` -- #hastag
-			2. `@\w\w+` -- @twitter-handle
+			1. `#\w+` -- #hastag
+			2. `@\w+` -- @twitter-handle
 			3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10   
 		
 ---  
 
 ## Thank You for Attending
 
-* **Please** complete the **Feedback Form**
+* **Please** complete the paper **Feedback Form** 
 * **Presenter** 
 John Little   
 Data Management & Data Analysis Consultant   

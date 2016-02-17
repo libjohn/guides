@@ -86,7 +86,7 @@ http://v.gd/intro_regex (January 2016)
 				2. click Community
 				3. search on the term 'email'
 				4. From there, I found this one   
-				`/([\w\.]+)@([\w\.]+)\.(\w+)/g`   
+				`([\w\.]+)@([\w\.]+)\.(\w+)`   
 				Wow!  That saved a lot of time and thinking.  You can rate useful contributions from the community to privilege useful contributions.
 		  
 		10. **Section headings**   

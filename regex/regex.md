@@ -104,12 +104,12 @@ http://v.gd/intro_regex (January 2016)
 			1. Turn on the case insensitive flag
 			2. `honour` -- 14 matches
 			3. `honou?r` -- optional "u"  and still 14 matches
-			4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty
-			5. Turn off case insensitive flag
+			4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty; for 66 matches
+			5. Turn off case insensitive flag -- 61 matches
 		
 		3. **Acts and Scenes**
 			1. Turn on multiline matching
-			2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals
+			2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals; for 20 matches
 			3. turn off multiline matching   
 
 		4. **Major Parts**
@@ -128,7 +128,7 @@ http://v.gd/intro_regex (January 2016)
 			2. Click the "List in text area" button, copy and paste the names list to your buffer
 			3. Replace the text in the RegExr *Text* panel with the random names
 			4. Click the grey *Substitution* bar at the bottom of RegExr
-			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel   
+			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel; in that space type `$1 $2`
 			
 		2. **Capture and manipulate text**   
 		*Notice how $1 and $2 are used to recall the text captured within the parenthesis groupings \(  \)*

@@ -65,7 +65,7 @@ http://v.gd/intro_regex (January 2016)
 			3. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using \\s allows us to stop matching email address by matching whitespace \\s      
 	
 		7. **Find all years**   
-		*Note the pipe character "\" -- alternation, alternatives.  Note the "()" grouping*   
+		*Note the pipe character "|" -- alternation, alternatives.  Note the "()" grouping*   
 			1. `\d\d\d\d` -- a lot of matches here
 			2. `\d{4}` -- more susccinct but has the same meaning as above
 			3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives

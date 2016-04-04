@@ -4,6 +4,7 @@ A workshop and workbook
 Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news)  
 Meet in the DVS Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
 http://v.gd/intro_regex (January 2016)
+[Workshop Video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd) (February 2016)
 
 ## Prerequisites
 * **You Must Preregister** 

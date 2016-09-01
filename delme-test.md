@@ -1,3 +1,0 @@
-delme
-
-# hello world

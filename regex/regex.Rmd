@@ -1,7 +1,7 @@
 ---
-title: "Intro to R by Data & Visualization Services"
-author: "Joel Herndon & John Little"
-date: "9/12/2016"
+title: "Intro to Regular Expressions (RegEx)"
+author: "John Little"
+date: "9/14/2016"
 output:
   html_document:
     highlight: pygments
@@ -24,7 +24,6 @@ http://v.gd/intro_regex (January 2016)
 [Workshop Video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd) (February 2016)
 
 ## Prerequisites
-* **You Must Preregister** 
 * **Bring YOUR Laptop**
 
 --------

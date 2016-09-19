@@ -63,9 +63,9 @@ A workshop and workbook
 ### Whole Words
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**
-    i. this is nuts
-    ii.  so is this
-    iii.  this won't render and it's driving me nuts.
+i. this is nuts
+    ii. so is this
+    iii. this won't render and it's driving me nuts.
     
     
     

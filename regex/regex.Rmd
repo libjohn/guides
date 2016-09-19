@@ -58,10 +58,10 @@ A workshop and workbook
 ### Whole words
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**  <br>*Simple searches are just like traditional find & replace*
-    a. `avian` -- 2 matches <br><img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
-    b. `Avian` -- 12 matches
-    c. `avian` -- with the ignore case flag -- 14 matches <br><img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp;<img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
-    d. Clear the case insensitive flag   
+  a. `avian` -- 2 matches <br><img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
+  b. `Avian` -- 12 matches
+  c. `avian` -- with the ignore case flag -- 14 matches <br><img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp;<img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
+  d. Clear the case insensitive flag   
 
 ### Capitalization & character classes
 3. **Find only capitalized** words   

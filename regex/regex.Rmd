@@ -18,10 +18,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 A workshop and workbook
 
-Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news)  
-Meet in the DVS Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
-http://v.gd/intro_regex (January 2016)
-[Workshop Video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd) (February 2016)
+* Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news) 
+* Meet in the DVS Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
+* Wokrshop History
+    * September 2016 [Workbook](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd)
+    * January 2016 [Workbook](http://v.gd/intro_regex) | [Recording](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)
 
 ## Prerequisites
 * **Bring YOUR Laptop**

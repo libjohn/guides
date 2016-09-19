@@ -256,8 +256,8 @@ div.tocify {
 <li>Please attribute <a href="http://www.intersect.org.au/course-resources">Intersect</a></li>
 </ul>
 </div>
-<div id="hands-on-exercise-1" class="section level2">
-<h2>Hands-on, Exercise 1</h2>
+<div id="exercise-1---find-patterns" class="section level2">
+<h2>Exercise 1 - Find Patterns</h2>
 <div id="regexr.com" class="section level3">
 <h3>RegExr.com</h3>
 <ul>
@@ -330,7 +330,7 @@ div.tocify {
 <h3>Email addresses</h3>
 <ol start="7" style="list-style-type: decimal">
 <li><code>\w+@[\w\.]+</code> – This rule is quite permissive. It’s likely to match some invalid email addresses. e.g. <a href="mailto:fred@invalid.net">fred@invalid.net</a><br />
- It’s also likely to miss valid email addresses like <a href="mailto:luc.small@intersect.org.au">luc.small@intersect.org.au</a><br />
+ It’s also likely to miss valid email addresses like <a href="mailto:vincent.zappa@intersect.org.au">vincent.zappa@intersect.org.au</a><br />
  <strong>SUGGESTION</strong>: ask the RegExr community:
 <ul>
 <li>left-hand sidebar</li>
@@ -354,10 +354,10 @@ div.tocify {
 </ol>
 </div>
 </div>
-<div id="hands-on-exercise-2" class="section level2">
-<h2>Hands-on, Exercise 2</h2>
+<div id="exercise-2---more-patterns" class="section level2">
+<h2>Exercise 2 - More Patterns</h2>
 <div id="get-example-text" class="section level3">
-<h3>Get Example Text</h3>
+<h3>Get example text</h3>
 <div id="to-die-upon-a-kiss" class="section level4">
 <h4><em>To die upon a kiss</em></h4>
 <ol style="list-style-type: decimal">
@@ -401,13 +401,44 @@ div.tocify {
 </ol>
 </div>
 </div>
-<div id="exercise-3" class="section level2">
-<h2>Exercise 3</h2>
-<div id="section" class="section level3">
-<h3></h3>
+<div id="exercise-3---replace" class="section level2">
+<h2>Exercise 3 - Replace</h2>
+<div id="preparation" class="section level3">
+<h3>Preparation</h3>
+<ol style="list-style-type: decimal">
+<li>Generate a small list of random names from the <a href="http://listofrandomnames.com/">random name generator</a></li>
+<li>Click the “List in text area” button, copy and paste the names list to your buffer</li>
+<li>Replace the text in the RegExr <em>Text</em> panel with the random names</li>
+<li>Click the grey <em>Substitution</em> bar at the bottom of RegExr</li>
+<li>Remove the <code>\n# $&amp;:\n\t</code> code in the <em>Substitution</em> panel</li>
+</ol>
 </div>
-<div id="section-1" class="section level3">
-<h3></h3>
+<div id="capture-groups" class="section level3">
+<h3>Capture Groups</h3>
+<ol start="6" style="list-style-type: decimal">
+<li><code>(\w+) (\w+)</code> – in the <em>Expression</em> panel will highlight all names</li>
+<li><code>&quot;$&amp;&quot;</code> – in the <em>Substitution</em> pane will reproduce the text pattern matched within forward slashes (<em>Expression</em> pane <code>/</code> <code>/</code>)</li>
+<li><code>- $2, $1</code> – swap the order of the first and last name and precede tha whole name with a dash ‘-’</li>
+<li><code>&lt;b&gt;$2&lt;/b&gt;, $1</code> – Bold the last name and add a coma</li>
+</ol>
+</div>
+</div>
+<div id="exercise-4---special-case" class="section level2">
+<h2>Exercise 4 - Special case</h2>
+<div id="preparation-1" class="section level3">
+<h3>Preparation</h3>
+<ol style="list-style-type: decimal">
+<li>Open this <a href="http://www.regexr.com/3cfee">twitter stream data pre-loaded into RegExr</a></li>
+</ol>
+<p><em>Please note this is actual twitter stream data about a politician, the tweets may be offensive</em></p>
+</div>
+<div id="capture-hashtags-twitter-handles" class="section level3">
+<h3>Capture #hashtags, <span class="citation">@twitter-handles</span></h3>
+<ol style="list-style-type: decimal">
+<li><code>#\w+</code> – #hastag</li>
+<li><code>@\w+</code> – <span class="citation">@twitter-handle</span></li>
+<li><code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></li>
+</ol>
 <p>Below the line – UNDER CONSTRUCTION/RENOVATION. Check previous <a href="http://v.gd/intro_regex">iteration</a> if you need to see what was done in Junuary 2016 XMXMXMXMXMXMXM———————————————–</p>
 <pre><code>4. **Exercise 3** -- Manipulating captured patterns
     1. **Preparation**

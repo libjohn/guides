@@ -49,7 +49,7 @@ A workshop and workbook
 * Slides and exercises are shared with permission
 * Please attribute [Intersect](http://www.intersect.org.au/course-resources)
 
-## Hands-on, Exercise 1
+## Exercise 1 - Find Patterns
 
 ### RegExr.com
 * Introduction to [RegExr.com](http://regexr.com/) 
@@ -98,7 +98,7 @@ A workshop and workbook
 
 ### Email addresses
 7. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
-			It's also likely to miss valid email addresses like luc.small@intersect.org.au   
+			It's also likely to miss valid email addresses like vincent.zappa@intersect.org.au   
 			**SUGGESTION**: ask the RegExr community:
     + left-hand sidebar
     + click Community
@@ -113,8 +113,7 @@ A workshop and workbook
     + `^(\w+ ?)+$` -- match repeating words + optional space
     + Reset the multiline flag   
 		
-
-## Hands-on, Exercise 2
+## Exercise 2 - More Patterns
 
 ### Get example text
 #### *To die upon a kiss*
@@ -143,45 +142,36 @@ A workshop and workbook
 15. `^.*\?` -- from start of line to question mark
 16. Turn off multiline matching  
 
-## Exercise 3
+## Exercise 3 - Replace
 
-### 
-### 
+### Preparation
+1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
+2. Click the "List in text area" button, copy and paste the names list to your buffer
+3. Replace the text in the RegExr *Text* panel with the random names
+4. Click the grey *Substitution* bar at the bottom of RegExr
+5. Remove the `\n# $&:\n\t` code in the *Substitution* panel
 
+### Capture Groups
+6. `(\w+) (\w+)` -- in the *Expression* panel will highlight all names
+7. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
+8. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
+9. `<b>$2</b>, $1` -- Bold the last name and add a coma 
+
+## Exercise 4 - Special case
+
+### Preparation
+1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)
+
+*Please note this is actual twitter stream data about a politician, the tweets may be offensive*
+
+### Capture #hashtags, @twitter-handles
+1. `#\w+` -- #hastag
+2. `@\w+` -- @twitter-handle
+3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10 
 
 Below the line -- UNDER CONSTRUCTION/RENOVATION.  Check previous [iteration](http://v.gd/intro_regex) if you need to see what was done in Junuary 2016
-XMXMXMXMXMXMXM-----------------------------------------------
 
-
-
-
-
-		
-	4. **Exercise 3** -- Manipulating captured patterns
-		1. **Preparation**
-			1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
-			2. Click the "List in text area" button, copy and paste the names list to your buffer
-			3. Replace the text in the RegExr *Text* panel with the random names
-			4. Click the grey *Substitution* bar at the bottom of RegExr
-			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel
-			
-		2. **Capture and manipulate text**   
-		*In the next steps, *notice* how $1 and $2 will be used to recall the text captured within the parenthesis groupings `(`  `)`*
-			1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names
-			2. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
-			3. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
-			4. `<b>$2</b>, $1` -- Bold the last name and add a coma   
-			
-	5. **Exercise 4** -- Handling twitter data
-		1. **Preparation**
-			1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)   
-			*Please note this is actual twitter stream data about a politician, the tweets may be offensive*
-		2. **Capturing #hashtags, @twitter-handles**
-			1. `#\w+` -- #hastag
-			2. `@\w+` -- @twitter-handle
-			3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10   
-		
----  
+---
 
 ## Thank You for Attending
 

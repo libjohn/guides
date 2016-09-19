@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 A workshop and workbook
 
 * Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news) 
-* Meet in the DVS Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
+* Meet in the /Edge Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
 * Wokrshop History
     * September 2016 [Workbook](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd)
     * January 2016 [Workbook](http://v.gd/intro_regex) | [Recording](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)
@@ -44,7 +44,8 @@ A workshop and workbook
 
 ---
  
-## Regular Expressions -- an Introduction
+## RegEx -- an Introduction
+* [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) and RegEx
 * [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
 * All slides and exercises are the intellectual work of the good folks at Intersect
 * Slides and exercises are shared with permission
@@ -55,8 +56,36 @@ A workshop and workbook
 
 ## Hands-on
 
-1. Introduction to RegExr.com 
-1. Exercises from Intersect Tutorial on Regular Expressions using RegExr
+### RegExr.com
+* Introduction to [RegExr.com](http://regexr.com/) 
+* Exercises derived from Intersect Tutorial on Regular Expressions using RegExr
+
+### Whole Words
+1. **Exercise 1** -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
+		1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
+		2. **Find all literal words**  
+		*Simple searches are just like traditional find & replace*
+			1. `avian` -- 2 matches   
+			<img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
+			2. `Avian` -- 12 matches
+			3. `avian` -- with the ignore case flag -- 14 matches   
+			<img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
+			4. Clear the case insensitive flag   
+
+### Capitalization
+5. **Find only capitalized** words   
+		*Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*
+	1. `[A-Z]\w*` -- character classes `[` `]` are denoted by square brackets; wildcards include `*` , `+` , `?`   
+			<img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">
+	2. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
+	3. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  `\b`
+	4. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets `{` `}` allow for arbitrary repetition   
+
+
+
+-----------------------------------------------
+1. construction below.  If you need last year's fully constructed, [it's here.](http://v.gd/intro_regex) 
+1. foo
 	1. **Exercise 1** -- finding whole words, capitalized words, last words, years, phone numbers, email addresses
 		1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 		2. **Find all literal words**  

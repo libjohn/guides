@@ -205,9 +205,16 @@ div.tocify {
 
 
 <p>A workshop and workbook</p>
-<p>Part of the <a href="http://library.duke.edu/data">Data &amp; Visualization Services</a> – <a href="http://library.duke.edu/data/news">Workshop Series</a><br />
-Meet in the DVS Workshop Room – <a href="http://library.duke.edu/edge/spaces">floor map</a><br />
-<a href="http://v.gd/intro_regex" class="uri">http://v.gd/intro_regex</a> (January 2016) <a href="http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd">Workshop Video</a> (February 2016)</p>
+<ul>
+<li>Part of the <a href="http://library.duke.edu/data">Data &amp; Visualization Services</a> – <a href="http://library.duke.edu/data/news">Workshop Series</a></li>
+<li>Meet in the /Edge Workshop Room – <a href="http://library.duke.edu/edge/spaces">floor map</a><br />
+</li>
+<li>Wokrshop History
+<ul>
+<li>September 2016 <a href="https://github.com/libjohn/guides/blob/master/regex/regex.Rmd">Workbook</a></li>
+<li>January 2016 <a href="http://v.gd/intro_regex">Workbook</a> | <a href="http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd">Recording</a></li>
+</ul></li>
+</ul>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
 <ul>
@@ -240,9 +247,10 @@ Meet in the DVS Workshop Room – <a href="http://library.duke.edu/edge/spaces">
 </ul>
 <hr />
 </div>
-<div id="regular-expressions-an-introduction" class="section level2">
-<h2>Regular Expressions – an Introduction</h2>
+<div id="regex-an-introduction" class="section level2">
+<h2>RegEx – an Introduction</h2>
 <ul>
+<li><a href="https://en.wikipedia.org/wiki/Regular_expression">Regular Expressions</a> and RegEx</li>
 <li><a href="/regex/Intersect%20PDF%20Materials/Slides.pdf">Slides 3-13</a> from <a href="http://www.intersect.org.au/course-resources">Intersect</a></li>
 <li>All slides and exercises are the intellectual work of the good folks at Intersect</li>
 <li>Slides and exercises are shared with permission</li>
@@ -252,145 +260,95 @@ Meet in the DVS Workshop Room – <a href="http://library.duke.edu/edge/spaces">
 </div>
 <div id="hands-on" class="section level2">
 <h2>Hands-on</h2>
-<ol style="list-style-type: decimal">
-<li>Introduction to RegExr.com</li>
-<li>Exercises from Intersect Tutorial on Regular Expressions using RegExr
-<ol style="list-style-type: decimal">
-<li><strong>Exercise 1</strong> – finding whole words, capitalized words, last words, years, phone numbers, email addresses
+<div id="regexr.com" class="section level3">
+<h3>RegExr.com</h3>
+<ul>
+<li>Introduction to <a href="http://regexr.com/">RegExr.com</a></li>
+<li>Exercises derived from Intersect Tutorial on Regular Expressions using RegExr</li>
+</ul>
+</div>
+<div id="whole-words" class="section level3">
+<h3>Whole Words</h3>
 <ol style="list-style-type: decimal">
 <li><strong><a href="http://www.regexr.com/3c7gi">Open the example RFC text in RegExr</a></strong></li>
 <li><strong>Find all literal words</strong><br />
 <em>Simple searches are just like traditional find &amp; replace</em>
-<ol style="list-style-type: decimal">
+<ol style="list-style-type: lower-roman">
 <li><code>avian</code> – 2 matches<br />
-<img src="data:image/png;base64,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">     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAA4CAYAAAA/15zEAAAE7UlEQVR4Xu2cf0zUdRjHX4BDCqJCCtiC5bwocCVsJ47JpLgt1oIcYDMU/2Aha1O3M1pIOZnEcLIkm7LcnIs262wUrINiNhFjFA1wYaeQiXODDDgUkx/xa2q7QwNO4L6b3ji+3+f75+255/N5v1/3PM/3e7fPeQwMDN5BLs044CHANcPaLlSAa4u3ANcYbwEuwLXmgMb0ygwX4BpzQGNypcIFuMYc0JhcqXABrjEHNCZXKlyAu7cDI7c9+M7qzfmhJYze9nDvzbp4d3r/CdY/Pc4jnsp//1p0Ff753z5cGFriYisXT3ob9LeCxxRveNEBf+9PP8XitBDo43mHQt2wYqkCXLFV7hv4cfiQ4s0JcMVWuW+gAHdfNi7ZmQB3ia3um1SAuy8bl+xMgLvEVvdNKsDdl41LdibAXWKr+yYV4EMWOoozOPvzGI+9nEtsbiZPei8AsLaDfL2jhdjy44QFuG59jQPv5a/SI3il5xPi18y57YlcT2slITHMdY7PlVmAP7jnzr9atXCt7TkCI33si107GkCt30k2pq9+8MWnZRhpeBtz/osYao0ECvCH6u2MZM6BTw+3cDE7np60VuJnVHgz7YZErGtTGG6rZMIvhZXGTKjK4cKZS3iufge9sYiQYKDtM04Xf0pflxWf0BRW7i5F51fB6c3b6bu71EuH+omIHOVGVQ5nTSau94YSnFVK7KoWKndU8NTqMQabHfLiEJ9agn6bAd9xCx37s+z7IDSBcOMxIqIen9dQjbf0KW9ute6lOucS0ffN0Eng3cZfSUgOZ7zpXSrzylix7wr6mKVYS6OoGzpASu7rTI3+0cnXe4t4oyAV6jIwF+r/r3Bbjprim0QfPkZYcC/dJ8/zRKgF845aog4d5/lI6C5dQ/14KSk7DWCP9yGmrIgQPwvt2fFY01qJ8d2L+UcDSQWb8Omv5WqnnjABrqSDWLi4PZ4/VplJ2hqH14y3TAK/vruduFeCoKeChs1ZLLNXKozMgNmLtWo/7d/+QE+XFdhjh+w7I+Ym3Z8sp97bzIZt09ZymOFTeTOZsMVXO+jIOknKChM1ebUsS83l2UQDz+iCnIqVCgeG6zKoLhwl5stvWG5rzfMB76+g4c3ZgNvArKH+cjrrCnLxP5dF9d2qfijAuw6TVLIJX4fd3epv5mpdGR0mE15bHcfR/fwFeP/3/JK9hb615by20zCtLd8zy6HC5wSeyuCuKJqCytmw08BwVTI1B21tPB9/+xiAdTUlhHhjHwuzt/Spx7LpncP2/pq8FsL2lRMdM1XFI01f8Y8ulZAAK1f2RNEUambj1jiZ4XM70EnnR6/SeMbWfu9dk2146m5aKXAjvk0f0Fh8hD7vBMLTDYybPqQn+SfWp43SvmsLv5+zMv9N2+zAAxlloK6A376omBwVQXpeeN+M7kYOjUdtN37waEQ6EcYD6HSTTxxzXVLhTqeeugIEuLp4OlUjwJ1apK4AAa4unk7VCHCnFqkrQICri6dTNQLcqUXqChDg6uLpVI0Ad2qRegJUf/JEzpbN/LCq/myZ7fToiZ6lXP7XS06PauH0qHqa8cIoWXRnyxbGJvWsKsDVw1KREgGuyCb1BAlw9bBUpESAK7JJPUECXD0sFSkR4IpsUk+QAFcPS0VKBLgim9QTJMDVw1KREo9TpxqU/42fopQS5M4O/AeVGAKbeU6AGgAAAABJRU5ErkJggg=="></li>
+ <img src="data:image/png;base64,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">     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAA4CAYAAAA/15zEAAAE7UlEQVR4Xu2cf0zUdRjHX4BDCqJCCtiC5bwocCVsJ47JpLgt1oIcYDMU/2Aha1O3M1pIOZnEcLIkm7LcnIs262wUrINiNhFjFA1wYaeQiXODDDgUkx/xa2q7QwNO4L6b3ji+3+f75+255/N5v1/3PM/3e7fPeQwMDN5BLs044CHANcPaLlSAa4u3ANcYbwEuwLXmgMb0ygwX4BpzQGNypcIFuMYc0JhcqXABrjEHNCZXKlyAu7cDI7c9+M7qzfmhJYze9nDvzbp4d3r/CdY/Pc4jnsp//1p0Ff753z5cGFriYisXT3ob9LeCxxRveNEBf+9PP8XitBDo43mHQt2wYqkCXLFV7hv4cfiQ4s0JcMVWuW+gAHdfNi7ZmQB3ia3um1SAuy8bl+xMgLvEVvdNKsDdl41LdibAXWKr+yYV4EMWOoozOPvzGI+9nEtsbiZPei8AsLaDfL2jhdjy44QFuG59jQPv5a/SI3il5xPi18y57YlcT2slITHMdY7PlVmAP7jnzr9atXCt7TkCI33si107GkCt30k2pq9+8MWnZRhpeBtz/osYao0ECvCH6u2MZM6BTw+3cDE7np60VuJnVHgz7YZErGtTGG6rZMIvhZXGTKjK4cKZS3iufge9sYiQYKDtM04Xf0pflxWf0BRW7i5F51fB6c3b6bu71EuH+omIHOVGVQ5nTSau94YSnFVK7KoWKndU8NTqMQabHfLiEJ9agn6bAd9xCx37s+z7IDSBcOMxIqIen9dQjbf0KW9ute6lOucS0ffN0Eng3cZfSUgOZ7zpXSrzylix7wr6mKVYS6OoGzpASu7rTI3+0cnXe4t4oyAV6jIwF+r/r3Bbjprim0QfPkZYcC/dJ8/zRKgF845aog4d5/lI6C5dQ/14KSk7DWCP9yGmrIgQPwvt2fFY01qJ8d2L+UcDSQWb8Omv5WqnnjABrqSDWLi4PZ4/VplJ2hqH14y3TAK/vruduFeCoKeChs1ZLLNXKozMgNmLtWo/7d/+QE+XFdhjh+w7I+Ym3Z8sp97bzIZt09ZymOFTeTOZsMVXO+jIOknKChM1ebUsS83l2UQDz+iCnIqVCgeG6zKoLhwl5stvWG5rzfMB76+g4c3ZgNvArKH+cjrrCnLxP5dF9d2qfijAuw6TVLIJX4fd3epv5mpdGR0mE15bHcfR/fwFeP/3/JK9hb615by20zCtLd8zy6HC5wSeyuCuKJqCytmw08BwVTI1B21tPB9/+xiAdTUlhHhjHwuzt/Spx7LpncP2/pq8FsL2lRMdM1XFI01f8Y8ulZAAK1f2RNEUambj1jiZ4XM70EnnR6/SeMbWfu9dk2146m5aKXAjvk0f0Fh8hD7vBMLTDYybPqQn+SfWp43SvmsLv5+zMv9N2+zAAxlloK6A376omBwVQXpeeN+M7kYOjUdtN37waEQ6EcYD6HSTTxxzXVLhTqeeugIEuLp4OlUjwJ1apK4AAa4unk7VCHCnFqkrQICri6dTNQLcqUXqChDg6uLpVI0Ad2qRegJUf/JEzpbN/LCq/myZ7fToiZ6lXP7XS06PauH0qHqa8cIoWXRnyxbGJvWsKsDVw1KREgGuyCb1BAlw9bBUpESAK7JJPUECXD0sFSkR4IpsUk+QAFcPS0VKBLgim9QTJMDVw1KREo9TpxqU/42fopQS5M4O/AeVGAKbeU6AGgAAAABJRU5ErkJggg=="></li>
 <li><code>Avian</code> – 12 matches</li>
 <li><code>avian</code> – with the ignore case flag – 14 matches<br />
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAArCAYAAAAuc0UDAAAD+klEQVRoQ+2ab0hbVxiHnzLmXNYqZi6mTC8rTW0jc51MHUUZjQVlbmO0JTD9UCZU62pHXQt184NSGYMIdRHaNWOWdKwzjKyWIaW0LBsbSWWxEJ1dU22hcB00ZjVFjfUSGB0mdtQo9MZYzIdzP97z5573ub/fe95zuesarj18iLgWEVgnoCxVhICyjEsEFAFFXfIUShFKEUpRR0AoRR0nkVOEUoRS1BFYLaVE5BEUbSEZ61f83JQemHhOuW3lpwMdKBzmjeNbyCjYg06bvjjI8Bh3L3fz13kHkxOxJo3xBOUn68hKaRyxxSUO5YaVHz7uABrJ32NjrA/IKeYl/RayjM8x6/cwOXwLZUnwjZgufYEuLfWprA4UVXEKKMtgWg6Kwj2HGU+PB6XyO3a3FBNoMzL7QQhjgSrST6XT2ioldJGrZge5359D0s/HN4EsoPThNstsczWTHX3nAgqEBJTFu8//W/ujtNDGLlcNDx63T8CFz9qKPHgLJaeC/OYuikql2IDARXzWjmgbebuRStKZ9ChsO3mGjSE7f3xuYXw8iKbkQ4qau8iN2lPd9VRzisZYQ67pVTSB64x7MnntbNyW/ASlzLlPE5Bq2SRlEvG2cqlTR9mP81YbYfRQE8r+fra/nglhN8NHOkg/doWthhFGG5pQDsbaInIvwUgtuQZ1QJKuU95yNsKgDfmyi8BCbZKeV4a+qo7NVdVkxxd18etKxD4RN763bbzoPIdEvO3gnkPLTb2fclOQ0QYzk3udFJsKSVtBXZSUUpIuxp4EJTzG3/3djHnc/OMfB6rZMQ9FG1PKg31OikpzIOTC96kFTVQp8K/cx59fWZAHp3h2Zws7WurISgBO6kIxuBmu3c9svZMiUyHPpw3i39XNC1EogGzn5yMWZu8HIa8C6eBj+eaRIiMysqUSn76Hd+vLeUalg1ISimwaonz7CFfNNnT2fgySwtyQDe/RPvRf/85WwxR3v3wTv8FJeVWcRSJu7vyaycvz95ki+M17DKw/wfs1JSqRJHn2WX37wJy3lYFOGxnHbrJ54jMGvr3ATFoF+fUt6AMdeHuKKXO1k+Fu4kK7Y+GwWYbOWIO09x02amXunDqO3/MLM/d1bNh5mNJPPiI7gRP92ipF9buL6xh2ca2hF13XGSS9QiQcZNpjZajzOq/Yr2BY2LVXOn3iUOa9XHeUSWMblV3NCSWwlS5yybhAL78dcrGp6xSSFPtsEbltx3vAgX5NoKxaZMlNFLlxGl/P2YVSQMeGkmry97VjKMhMbuIVfU9J+pGpP0Hi9kn9mJJeoYCyDEIBRUBR5yyhFKEUoRR1BIRS1HESOUUoRShFHYHllDI9PSP+uI4D8x/d4lwAKFBdQQAAAABJRU5ErkJggg==">     <img src="data:image/png;base64,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">     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA4CAYAAAD6pQZVAAAE0klEQVR4Xu2cf0icdRzHX+rwR4qNjNRIaXhINloKpxHKRh7kH82GP8ZyK2jsFpH+YRpz2nAk4pg0LZo0qpFFdMGYMpUOwx8lhnEu0uk8qolDMfVE3fyR14lb3DlML6/nBvddz7N978/jc+/v+96v+3ye73P3POc3P79wG/nQRAJ+EpYmOLlMSljaYSVhaYiVhCVhaSkBDXmVxywJS0MJaMiq7CwJS0MJaMiq7CwJS0MJaMiq7CwJC5Zv+XHJFsjg4jbst/w0FMm9saoPX2HfYw5C/L3/Hl1YZ33+RzBXF7fdm3eu0VWcwF6J+str98JgvfNbmNcmHtTCYP/bVOqWvH77EpbXUYkpfD9+0WthCcvrqMQUSlhichWiKmEJiVWMqIQlJlchqhKWkFjFiEpYYnIVoiphCYlVjKiGYNmZqH2crqhWDuQlb0hjitHyBHr4jJcrsgkRk5OCai9WQwYzJ6ykvRApzIFmYC11HqGtshG7cTOs1b4yWorPYU+VsDZ+Sv7Hk+JerEUVjPf/yMwmWAP8WpDPdccgN6LEwFruPkLTyWcwtBfyqMeekZ3lFs1aIFc2wHJ052O2prJrrADLlmNw7TW21CyWhhpZCctiZ+FhaC7m6ve/45/8JvrCKqKjgKGP6aj+kOkxG8ExWew8UYcurIGOQwVM33Gy66NZEp62M9dczM8mEzNTMUQZ63g+L4hhQwajz6azOtrBQmA68YU1JKXEAm712TXo8w2EOga4dtro8kGMs/48CYkP/+cI1cwYBDdYjl6sBcX4H/uKkC8TPRyz1l4zUfgT6ZnxOCxFNJbWE3dqBH1KELa6RDoXz5BV8hKB6zHZ156fqnIdA+l8laZK/XpnOTXM1TdJOnue2KgpJloH2Z4RznXnOm+1kpaTDJYyzKV2Ui7VEDHkrA8mpb6K6LABrG/swZbTR0roezR9Z2BvxUGCZ9sZH9UTe7/CWmrNpeWigRc/yWbB4wbDbTxNNtB9yEiEq0NgeROIKWzNp7Fe/JbJMRtQ7gIUuqnmJhO1O+gKbCI3P42AdcBu68w20L3fuc4I21t30NXi1jDGVrLiTJhL24nILuHJDANP6JQ3JtrsrMx5Lr++n+E5txD+tcnwFKI7rMOs1D5H13AeuytKCO830nKnm3wCa+wse2sOEupmd3W2l/HOeq6ZTAQc7WNPhnNsen5oE5bXW3dvYWWzcDwRS+QFct82sNScifkD5+g7SbhrdMJucw3RgbhGqacxuL51X++sWeIWizCXXib21AWSUv7pnmXL19zQZRP9iI2R8kQsMU0cOJomYW0VovsYDLWU0VN9jmnn5iDPgMP0LpOZP7Avx471+Gtc6behtMHYeh07850V/PJFw9p4jdTz1LEmdHPF9Hzq3KTAQwl5JBSeQacLvl9gCTvX1IywhsagZjIVZlTCEhat74UlLN9nKkxRwhIWre+FJSzfZypMUcISFq3vhSUs32cqTFHCEhatb4VVc0WuvNZdGaxqrnV33kXyzWQQw38GyLtItuCmqrtIlD9XsuJuExD2s/7dGpH1yglIWMoZqaZCwlINCmUjEpZyRqqpkLBUg0LZiISlnJFqKiQs1aBQNiJhKWekmgoJSzUolI1IWMoZqabCr62t2/u/OFGN7QfTyN/71jSb/lveOgAAAABJRU5ErkJggg=="></li>
 <li>Clear the case insensitive flag</li>
 </ol></li>
-<li><strong>Find only capitalized</strong> words<br />
-<em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code></em>
+</ol>
+</div>
+<div id="capitalization" class="section level3">
+<h3>Capitalization</h3>
 <ol style="list-style-type: decimal">
+<li><strong>Find only capitalized</strong> words<br />
+ <em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code></em>
+<ol style="list-style-type: lower-roman">
 <li><code>[A-Z]\w*</code> – character classes <code>[</code> <code>]</code> are denoted by square brackets; wildcards include <code>*</code> , <code>+</code> , <code>?</code><br />
-<img src="data:image/png;base64,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"></li>
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAAA4CAYAAAAW/KEGAAAIOUlEQVR4Xu2df1BU1xXHP8uvFRRYEFgkBhRSEKwr2MB0zI+xTUhoTFIzg21SYzWxU5tCJm2jtlNbS3ToJJg2yURqa8dJM4naDjQy08ShkabUhJqBGBAD8QdI/AnIbxDYhYXtPFyWhd1lH+xFQ+e+v2Deu+ed+72fe865Z9lB093dY0FeUgEPFdBIkDxUUA4fUUCCJEEQooAESYiM0ogESTIgRAEJkhAZpREJkmRAiAISJCEySiMSJMmAEAUkSEJklEYkSJIBIQpIkITIKI1IkCQDQhSQIAmRURqRIEkGhCggQRIiozQiQZIMCFHgpoHk41MsxOFbZcRszrhVr54V75UgqVwmCdLkQkmQJEgqFZAgCRFKRqQvG0inD9P4t4PjvNLct4/Iu0OELPi0jDjxyee7BYQvGbMmQbolIA3SUHWSJqM3urjlJIZ7YSu2ZytInWZaX3sCS/Be5mU/if+0iPV80MAXn3GiyYh38CLuTAzDy3OTQizMTI3U28Cnp9oweetISL2DUHAAyV0U6nx/H1Frjo5MUv98Dp/vWsqcqU65qYzvxL7Ku07HpfLm+W2sjZxw0wq6Y0RaRfehcEzn78d302F0E8dN1Tfb814M9HlBgBk/tzb6qKuspcXkTUh8CksUYb8k14yA1FtfTXXLANrwJFbEBYxMdWJEmhykXt5/diNr9ltV0q+h+PN13DtVkiYDSZ9OUeUPeUCnFqQMzDU76Ch6BQxlhD9iELSEWvZs8oWt18m2S6VOjY9uUO18DCmLmSvIAxFmZgCkDk5X1NMx5Ef4MgN3WGc7JZA6K3k26rfsNzxEVuoR8vfr2Fn6Z7akeThlYw1bE3PIb9aRVZzP7nudxACXEUnpI5XTnnsfQ9oX8d+SxbwJ7hg/eJye4+9B1DsEP5WOqSAQ49mn0T73GkFXfk9L4W9Af4igHzyMdnRsqz/bfu5NtAqQ2s9UcqZjaNwGHTEz3E/juXoudRoZcvi6qw/zk5KJD/JQOzfDxYPUWkd5XSdDAZF8zbDQFq6nApLx2BuEZhxBvzOX0pgiEjdUjPzcsCXeAzWuUfD97Wwo7CR1Zy7/3BLvPFVOChJc/8dK+qub8V5TQ+jS8SFyuGYHbUrEmruXuT+5h4E9X2Wwaxk+T/4X/yuP0/Pv9yCpjPDH7uRgth/F0cM8ejsUl3jhlzpEcr8XH52GzJxeHl0wcartnK44T8eQP1ErlhJj2wPDNNVW0tDt6gvTsxKksUkFRC1nebSvTQ31IA1wbOs6MvIhq/gAu2PKeDDxD3yo/x6lDY9xIyidpeWF7ZhdYDWxvlEeu/BWLombqyB1I8f/s5rlrpB0AxJX3qblL89A7BFCnrgHH3s7rYW0/ukpLLyA//a7GVCiF+D1rUv4X3mI3upTaL5RR9jK26gr9ePFQ17UT5hEXMoQO57uJ/pGRWC7hpvPUN7Qg2XCBoUezp44Q9sg+IbEkZwQgvliDVVX+7HMicCQHH1TUqDYiDR8jZqKi3QTyOLUBCLtjhSqQVLST2gO+aRTdFWpYRrY8/VtbKu2T29TA8lYfpgHVx2kQr+SN0t/ytqYSQKbO5C4QOdIpFmH33N/JHhcfrOmPlbjm5mJubAE9AewRJehbbsL03nwzuwhNMH6/j4t+3J8OdSm/G4h65cmMuOcbY/RDQpBi1NYqh9/Vuuqr6K2xck4B+g8COg3M7UNXKzhxNV+NEHRpCVFjDuaqgVpNK0583ta6c2uLtpU9CqvP+CmRHULEgyU/4iuowfQpF8iLM2+Wh+FLALvpCyG6rX4xPwCs3kvvl3PMNi2Gt/Nf0UXZp1doz8//pU3dUpYM0PyehN5qwYdpz5wmZOfNtGncdygIw+bLnOyUrmvAYuS4jT4BuiITogjwlaMzRxEimWBEWmsd+TsaKoOpLG05nTaho0c/3iStOQwSGVdZD9OBUhcf9dlT6lnpMAGjX4dFh7GP+lt+qvnoGn7uzXl/cxapPvyQa6WXa3D5OeaoHAOWWUWXnqlj7QJac3WOwqJIy3BsXHb+NknfHHdh5B4A0tCb01nSRxITnpH9uujCiRjDb9OzOF3zTqeL85n1+ipynaMX0Te8d1kuyxwxpPUVJBH7IYKl1txZ2mB40lQDUgYXfaUbCc35a1KYZ1UcuO0plzBbxCYnXmjyB/0o3iPD6zvJyNMiSJ+HMzxIXKziW8uUCqr0ct976ip9oTTYluj8SNwYSyJt82b8calMJC6zlVR22Z2PJpa9VADkvHYARIzimh26Btd461vZ7H5KBjy8vg4e7GqOF3+8lpW7XD96PRBYlxPaf4jBttC2U5uSrhXCuv4D60FOBD/L+avTZvaonbX80ltB4OT9I7M7XVUne3ESVIcAVS/zEDsDDedBIE01jty5bQakFTRMdMPqYpIihPVdLx8F2ac95REuWnrHUUksSJ2Qs5TXmJXPy1K+QoL/JTUZsbYWE/VhR4sswokF72jyVKb/T13H5eIWhSXdqb5oe1kPSUxPrvqHdlZ771I5alrGF280DvodpKT9Co+fvHMYwERyXXv6P8dJFtPKfoddOvTGeuaebYoo6Nd947G2ze2NHDucju9Jgs32pIaNNoAQiMXErsgcHyvS4xrDlYEgKTOM/mntup0mq1P3TSQZqtA0m91CkiQ1Okkn3KjgARJIiJEAQmSEBmlEQmSZECIAhIkITJKIxIkyYAQBSRIQmSURiRIkgEhCkiQhMgojUiQJANCFJAgCZFRGpEgSQaEKCBBEiKjNCJBkgwIUUCCJERGaUSCJBkQooAESYiM0oimpOQj+e/aJQceK/A/F/pRqtS0HTcAAAAASUVORK5CYII="></li>
 <li><code>[A-Z]+</code> – match only “all caps” words. <strong>BUT</strong> this is not quite right. It doesn’t work. <em>Do you know why?</em></li>
 <li><code>\b[A-Z]+\b</code> – Because you have to match on a word boundary using an anchor class: <code>\b</code></li>
 <li><code>\b[A-Z]{2,}\b</code> – Abbreviations are usually 2 or more upper case characters. Squiggly brackets <code>{</code> <code>}</code> allow for arbitrary repetition</li>
 </ol></li>
-<li><strong>Match the last words of sentences</strong><br />
-<em>We can restore a letter’s literal meaning by escaping it</em>
-<ol style="list-style-type: decimal">
-<li><code>\w+.</code> – This doesn’t work because “.” matches every character</li>
-<li><code>\w+\.</code> – We escape the period “.” with a the escape character <code>\</code></li>
-<li><code>\w+\.\s</code> – More precise this time. Matching on 56 words. Using <code>\s</code> allows us to stop matching email address by matching whitespace <code>\s</code></li>
-</ol></li>
-<li><strong>Find all years</strong><br />
-<em>Note the pipe character <code>|</code> – alternation, alternatives. Note the <code>(</code> <code>)</code> grouping</em>
-<ol style="list-style-type: decimal">
-<li><code>\d\d\d\d</code> – a lot of matches here</li>
-<li><code>\d{4}</code> – more susccinct but has the same meaning as above</li>
-<li><code>\b\d{4}\b</code> – word boundaries <code>\b</code> help but there are still some false positives</li>
-<li><code>\b(19|20)\d\d\b</code> – better and works for the twenties and twenty-first centuries</li>
-</ol></li>
-<li><strong>Phone numbers</strong><br />
-<em>Note: escape the parenthesis <code>\(</code></em><br />
-<em>Note: <code>?</code> indicates optionality matching zero or one occurrence</em>
-<ol style="list-style-type: decimal">
-<li><code>\(\d{3}\) \d{3}-\d{4}</code> – Very specific. This works as long as phone numbers are formatted consistently</li>
-<li><code>\(?\d+\)? ?[\d-]{5,}\d</code> – more permissive</li>
-<li><code>\(?\d+(\)|.)? ?[\d-.]{5,}\d</code> – more permissive still. Allows for <code>.</code> instead of - as a separator</li>
-</ol></li>
-<li><strong>Email addresses</strong>
-<ol style="list-style-type: decimal">
-<li><code>\w+@[\w\.]+</code> – This rule is quite permissive. It’s likely to match some invalid email addresses. e.g. <a href="mailto:fred@invalid.net">fred@invalid.net</a><br />
-It’s also likely to miss valid email addresses like <a href="mailto:luc.small@intersect.org.au">luc.small@intersect.org.au</a><br />
-<strong>SUGGESTION</strong>: ask the RegExr community:
-<ol style="list-style-type: decimal">
-<li>left-hand sidebar</li>
-<li>click Community</li>
-<li>search on the term ‘email’</li>
-<li>From there, I found this one<br />
-<code>([\w\.]+)@([\w\.]+)\.(\w+)</code><br />
-Wow! That saved a lot of time and thinking. You can rate useful contributions from the community to privilege useful contributions.</li>
-</ol></li>
-</ol></li>
-<li><strong>Section headings</strong><br />
-Note how <code>+</code> can be applied to a group
-<ol style="list-style-type: decimal">
-<li>Using the Flag setting of RegExr (upper-left), set to multiline – This enables ^ and $ anchors</li>
-<li><code>^(\w+ ?)+$</code> – match repeating words + optional space</li>
-<li>Reset the multiline flag</li>
-</ol></li>
-</ol></li>
-<li><strong>Exercise 2</strong> – To die upon a kiss
-<ol style="list-style-type: decimal">
-<li><strong>Preparation</strong>
-<ol style="list-style-type: decimal">
-<li><a href="http://shakespeare.mit.edu/othello/full.html">Open Othello text in a browser window</a></li>
-<li>Copy/Paste full text into RegExr <em>Text</em> panel</li>
-</ol></li>
-<li><strong>Exploring honesty</strong>
-<ol style="list-style-type: decimal">
-<li>Turn on the case insensitive flag</li>
-<li><code>honour</code> – 14 matches</li>
-<li><code>honou?r</code> – optional “u” and still 14 matches</li>
-<li><code>hon(our|ourable|esty?)</code> – honour honourable, honest, honesty; for 66 matches</li>
-<li>Turn off case insensitive flag – 61 matches</li>
-</ol></li>
-<li><strong>Acts and Scenes</strong>
-<ol style="list-style-type: decimal">
-<li>Turn on multiline matching</li>
-<li><code>^(ACT|SCENE) [IVXLCDM]+</code> – literal word, space, roman numerals; for 20 matches</li>
-<li>turn off multiline matching</li>
-</ol></li>
-<li><strong>Major Parts</strong>
-<ol style="list-style-type: decimal">
-<li>Turn on multiline matching</li>
-<li><code>^[A-Z]+$</code></li>
-<li>turn off multiline matching</li>
-</ol></li>
-<li><strong>Questions</strong>
-<ol style="list-style-type: decimal">
-<li>Turn on multiline matching</li>
-<li><code>^.*\?</code> – from start of line to question mark</li>
-<li>Turn off multiline matching</li>
-</ol></li>
-</ol></li>
-<li><strong>Exercise 3</strong> – Manipulating captured patterns
-<ol style="list-style-type: decimal">
-<li><strong>Preparation</strong>
-<ol style="list-style-type: decimal">
-<li>Generate a small list of random names from the <a href="http://listofrandomnames.com/">random name generator</a></li>
-<li>Click the “List in text area” button, copy and paste the names list to your buffer</li>
-<li>Replace the text in the RegExr <em>Text</em> panel with the random names</li>
-<li>Click the grey <em>Substitution</em> bar at the bottom of RegExr</li>
-<li>Remove the <code>\n# $&amp;:\n\t</code> code in the <em>Substitution</em> panel</li>
-</ol></li>
-<li><strong>Capture and manipulate text</strong><br />
-<em>In the next steps, </em>notice* how $1 and <span class="math inline">\(2 will be used to recall the text captured within the parenthesis groupings `(` `)`* 1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names 2. `&quot;\)</span>&amp;“<code>-- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane</code>/<code>`/</code>)
-<ol start="3" style="list-style-type: decimal">
-<li><code>- $2, $1</code> – swap the order of the first and last name and precede tha whole name with a dash ‘-’</li>
-<li><code>&lt;b&gt;$2&lt;/b&gt;, $1</code> – Bold the last name and add a coma</li>
-</ol></li>
-</ol></li>
-<li><strong>Exercise 4</strong> – Handling twitter data
-<ol style="list-style-type: decimal">
-<li><strong>Preparation</strong>
-<ol style="list-style-type: decimal">
-<li>Open this <a href="http://www.regexr.com/3cfee">twitter stream data pre-loaded into RegExr</a><br />
-<em>Please note this is actual twitter stream data about a politician, the tweets may be offensive</em></li>
-</ol></li>
-<li><strong>Capturing #hashtags, <span class="citation">@twitter-handles</span></strong>
-<ol style="list-style-type: decimal">
-<li><code>#\w+</code> – #hastag</li>
-<li><code>@\w+</code> – <span class="citation">@twitter-handle</span></li>
-<li><code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></li>
-</ol></li>
-</ol></li>
-</ol></li>
 </ol>
-<hr />
+<table style="width:65%;">
+<colgroup>
+<col width="65%"></col>
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">1. construction below. If you need last year’s fully constructed, <a href="http://v.gd/intro_regex">it’s here.</a> 1. foo 1. <strong>Exercise 1</strong> – finding whole words, capitalized words, last words, years, phone numbers, email addresses 1. <strong><a href="http://www.regexr.com/3c7gi">Open the example RFC text in RegExr</a></strong> 2. <strong>Find all literal words</strong> <em>Simple searches are just like traditional find &amp; replace</em> 1. <code>avian</code> – 2 matches <img src="data:image/png;base64,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">     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAA4CAYAAAA/15zEAAAE7UlEQVR4Xu2cf0zUdRjHX4BDCqJCCtiC5bwocCVsJ47JpLgt1oIcYDMU/2Aha1O3M1pIOZnEcLIkm7LcnIs262wUrINiNhFjFA1wYaeQiXODDDgUkx/xa2q7QwNO4L6b3ji+3+f75+255/N5v1/3PM/3e7fPeQwMDN5BLs044CHANcPaLlSAa4u3ANcYbwEuwLXmgMb0ygwX4BpzQGNypcIFuMYc0JhcqXABrjEHNCZXKlyAu7cDI7c9+M7qzfmhJYze9nDvzbp4d3r/CdY/Pc4jnsp//1p0Ff753z5cGFriYisXT3ob9LeCxxRveNEBf+9PP8XitBDo43mHQt2wYqkCXLFV7hv4cfiQ4s0JcMVWuW+gAHdfNi7ZmQB3ia3um1SAuy8bl+xMgLvEVvdNKsDdl41LdibAXWKr+yYV4EMWOoozOPvzGI+9nEtsbiZPei8AsLaDfL2jhdjy44QFuG59jQPv5a/SI3il5xPi18y57YlcT2slITHMdY7PlVmAP7jnzr9atXCt7TkCI33si107GkCt30k2pq9+8MWnZRhpeBtz/osYao0ECvCH6u2MZM6BTw+3cDE7np60VuJnVHgz7YZErGtTGG6rZMIvhZXGTKjK4cKZS3iufge9sYiQYKDtM04Xf0pflxWf0BRW7i5F51fB6c3b6bu71EuH+omIHOVGVQ5nTSau94YSnFVK7KoWKndU8NTqMQabHfLiEJ9agn6bAd9xCx37s+z7IDSBcOMxIqIen9dQjbf0KW9ute6lOucS0ffN0Eng3cZfSUgOZ7zpXSrzylix7wr6mKVYS6OoGzpASu7rTI3+0cnXe4t4oyAV6jIwF+r/r3Bbjprim0QfPkZYcC/dJ8/zRKgF845aog4d5/lI6C5dQ/14KSk7DWCP9yGmrIgQPwvt2fFY01qJ8d2L+UcDSQWb8Omv5WqnnjABrqSDWLi4PZ4/VplJ2hqH14y3TAK/vruduFeCoKeChs1ZLLNXKozMgNmLtWo/7d/+QE+XFdhjh+w7I+Ym3Z8sp97bzIZt09ZymOFTeTOZsMVXO+jIOknKChM1ebUsS83l2UQDz+iCnIqVCgeG6zKoLhwl5stvWG5rzfMB76+g4c3ZgNvArKH+cjrrCnLxP5dF9d2qfijAuw6TVLIJX4fd3epv5mpdGR0mE15bHcfR/fwFeP/3/JK9hb615by20zCtLd8zy6HC5wSeyuCuKJqCytmw08BwVTI1B21tPB9/+xiAdTUlhHhjHwuzt/Spx7LpncP2/pq8FsL2lRMdM1XFI01f8Y8ulZAAK1f2RNEUambj1jiZ4XM70EnnR6/SeMbWfu9dk2146m5aKXAjvk0f0Fh8hD7vBMLTDYybPqQn+SfWp43SvmsLv5+zMv9N2+zAAxlloK6A376omBwVQXpeeN+M7kYOjUdtN37waEQ6EcYD6HSTTxxzXVLhTqeeugIEuLp4OlUjwJ1apK4AAa4unk7VCHCnFqkrQICri6dTNQLcqUXqChDg6uLpVI0Ad2qRegJUf/JEzpbN/LCq/myZ7fToiZ6lXP7XS06PauH0qHqa8cIoWXRnyxbGJvWsKsDVw1KREgGuyCb1BAlw9bBUpESAK7JJPUECXD0sFSkR4IpsUk+QAFcPS0VKBLgim9QTJMDVw1KREo9TpxqU/42fopQS5M4O/AeVGAKbeU6AGgAAAABJRU5ErkJggg=="> 2. <code>Avian</code> – 12 matches 3. <code>avian</code> – with the ignore case flag – 14 matches <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAArCAYAAAAuc0UDAAAD+klEQVRoQ+2ab0hbVxiHnzLmXNYqZi6mTC8rTW0jc51MHUUZjQVlbmO0JTD9UCZU62pHXQt184NSGYMIdRHaNWOWdKwzjKyWIaW0LBsbSWWxEJ1dU22hcB00ZjVFjfUSGB0mdtQo9MZYzIdzP97z5573ub/fe95zuesarj18iLgWEVgnoCxVhICyjEsEFAFFXfIUShFKEUpRR0AoRR0nkVOEUoRS1BFYLaVE5BEUbSEZ61f83JQemHhOuW3lpwMdKBzmjeNbyCjYg06bvjjI8Bh3L3fz13kHkxOxJo3xBOUn68hKaRyxxSUO5YaVHz7uABrJ32NjrA/IKeYl/RayjM8x6/cwOXwLZUnwjZgufYEuLfWprA4UVXEKKMtgWg6Kwj2HGU+PB6XyO3a3FBNoMzL7QQhjgSrST6XT2ioldJGrZge5359D0s/HN4EsoPThNstsczWTHX3nAgqEBJTFu8//W/ujtNDGLlcNDx63T8CFz9qKPHgLJaeC/OYuikql2IDARXzWjmgbebuRStKZ9ChsO3mGjSE7f3xuYXw8iKbkQ4qau8iN2lPd9VRzisZYQ67pVTSB64x7MnntbNyW/ASlzLlPE5Bq2SRlEvG2cqlTR9mP81YbYfRQE8r+fra/nglhN8NHOkg/doWthhFGG5pQDsbaInIvwUgtuQZ1QJKuU95yNsKgDfmyi8BCbZKeV4a+qo7NVdVkxxd18etKxD4RN763bbzoPIdEvO3gnkPLTb2fclOQ0QYzk3udFJsKSVtBXZSUUpIuxp4EJTzG3/3djHnc/OMfB6rZMQ9FG1PKg31OikpzIOTC96kFTVQp8K/cx59fWZAHp3h2Zws7WurISgBO6kIxuBmu3c9svZMiUyHPpw3i39XNC1EogGzn5yMWZu8HIa8C6eBj+eaRIiMysqUSn76Hd+vLeUalg1ISimwaonz7CFfNNnT2fgySwtyQDe/RPvRf/85WwxR3v3wTv8FJeVWcRSJu7vyaycvz95ki+M17DKw/wfs1JSqRJHn2WX37wJy3lYFOGxnHbrJ54jMGvr3ATFoF+fUt6AMdeHuKKXO1k+Fu4kK7Y+GwWYbOWIO09x02amXunDqO3/MLM/d1bNh5mNJPPiI7gRP92ipF9buL6xh2ca2hF13XGSS9QiQcZNpjZajzOq/Yr2BY2LVXOn3iUOa9XHeUSWMblV3NCSWwlS5yybhAL78dcrGp6xSSFPtsEbltx3vAgX5NoKxaZMlNFLlxGl/P2YVSQMeGkmry97VjKMhMbuIVfU9J+pGpP0Hi9kn9mJJeoYCyDEIBRUBR5yyhFKEUoRR1BIRS1HESOUUoRShFHYHllDI9PSP+uI4D8x/d4lwAKFBdQQAAAABJRU5ErkJggg==">     <img src="data:image/png;base64,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">     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAA4CAYAAAD6pQZVAAAE0klEQVR4Xu2cf0icdRzHX+rwR4qNjNRIaXhINloKpxHKRh7kH82GP8ZyK2jsFpH+YRpz2nAk4pg0LZo0qpFFdMGYMpUOwx8lhnEu0uk8qolDMfVE3fyR14lb3DlML6/nBvddz7N978/jc+/v+96v+3ye73P3POc3P79wG/nQRAJ+EpYmOLlMSljaYSVhaYiVhCVhaSkBDXmVxywJS0MJaMiq7CwJS0MJaMiq7CwJS0MJaMiq7CwJC5Zv+XHJFsjg4jbst/w0FMm9saoPX2HfYw5C/L3/Hl1YZ33+RzBXF7fdm3eu0VWcwF6J+str98JgvfNbmNcmHtTCYP/bVOqWvH77EpbXUYkpfD9+0WthCcvrqMQUSlhichWiKmEJiVWMqIQlJlchqhKWkFjFiEpYYnIVoiphCYlVjKiGYNmZqH2crqhWDuQlb0hjitHyBHr4jJcrsgkRk5OCai9WQwYzJ6ykvRApzIFmYC11HqGtshG7cTOs1b4yWorPYU+VsDZ+Sv7Hk+JerEUVjPf/yMwmWAP8WpDPdccgN6LEwFruPkLTyWcwtBfyqMeekZ3lFs1aIFc2wHJ052O2prJrrADLlmNw7TW21CyWhhpZCctiZ+FhaC7m6ve/45/8JvrCKqKjgKGP6aj+kOkxG8ExWew8UYcurIGOQwVM33Gy66NZEp62M9dczM8mEzNTMUQZ63g+L4hhQwajz6azOtrBQmA68YU1JKXEAm712TXo8w2EOga4dtro8kGMs/48CYkP/+cI1cwYBDdYjl6sBcX4H/uKkC8TPRyz1l4zUfgT6ZnxOCxFNJbWE3dqBH1KELa6RDoXz5BV8hKB6zHZ156fqnIdA+l8laZK/XpnOTXM1TdJOnue2KgpJloH2Z4RznXnOm+1kpaTDJYyzKV2Ui7VEDHkrA8mpb6K6LABrG/swZbTR0roezR9Z2BvxUGCZ9sZH9UTe7/CWmrNpeWigRc/yWbB4wbDbTxNNtB9yEiEq0NgeROIKWzNp7Fe/JbJMRtQ7gIUuqnmJhO1O+gKbCI3P42AdcBu68w20L3fuc4I21t30NXi1jDGVrLiTJhL24nILuHJDANP6JQ3JtrsrMx5Lr++n+E5txD+tcnwFKI7rMOs1D5H13AeuytKCO830nKnm3wCa+wse2sOEupmd3W2l/HOeq6ZTAQc7WNPhnNsen5oE5bXW3dvYWWzcDwRS+QFct82sNScifkD5+g7SbhrdMJucw3RgbhGqacxuL51X++sWeIWizCXXib21AWSUv7pnmXL19zQZRP9iI2R8kQsMU0cOJomYW0VovsYDLWU0VN9jmnn5iDPgMP0LpOZP7Avx471+Gtc6behtMHYeh07850V/PJFw9p4jdTz1LEmdHPF9Hzq3KTAQwl5JBSeQacLvl9gCTvX1IywhsagZjIVZlTCEhat74UlLN9nKkxRwhIWre+FJSzfZypMUcISFq3vhSUs32cqTFHCEhatb4VVc0WuvNZdGaxqrnV33kXyzWQQw38GyLtItuCmqrtIlD9XsuJuExD2s/7dGpH1yglIWMoZqaZCwlINCmUjEpZyRqqpkLBUg0LZiISlnJFqKiQs1aBQNiJhKWekmgoJSzUolI1IWMoZqabCr62t2/u/OFGN7QfTyN/71jSb/lveOgAAAABJRU5ErkJggg=="> 4. Clear the case insensitive flag</td>
+</tr>
+<tr class="even">
+<td align="left">5. <strong>Find only capitalized</strong> words <em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code></em> 1. <code>[A-Z]\w*</code> – character classes <code>[</code> <code>]</code> are denoted by square brackets; wildcards include <code>*</code> , <code>+</code> , <code>?</code> <img src="data:image/png;base64,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"> 2. <code>[A-Z]+</code> – match only “all caps” words. <strong>BUT</strong> this is not quite right. It doesn’t work. <em>Do you know why?</em> 3. <code>\b[A-Z]+\b</code> – Because you have to match on a word boundary using an anchor class: <code>\b</code> 4. <code>\b[A-Z]{2,}\b</code> – Abbreviations are usually 2 or more upper case characters. Squiggly brackets <code>{</code> <code>}</code> allow for arbitrary repetition</td>
+</tr>
+<tr class="odd">
+<td align="left">6. <strong>Match the last words of sentences</strong> <em>We can restore a letter’s literal meaning by escaping it</em> 1. <code>\w+.</code> – This doesn’t work because “.” matches every character 2. <code>\w+\.</code> – We escape the period “.” with a the escape character <code>\</code> 3. <code>\w+\.\s</code> – More precise this time. Matching on 56 words. Using <code>\s</code> allows us to stop matching email address by matching whitespace <code>\s</code></td>
+</tr>
+<tr class="even">
+<td align="left">7. <strong>Find all years</strong> <em>Note the pipe character <code>|</code> – alternation, alternatives. Note the <code>(</code> <code>)</code> grouping</em> 1. <code>\d\d\d\d</code> – a lot of matches here 2. <code>\d{4}</code> – more susccinct but has the same meaning as above 3. <code>\b\d{4}\b</code> – word boundaries <code>\b</code> help but there are still some false positives 4. <code>\b(19|20)\d\d\b</code> – better and works for the twenties and twenty-first centuries</td>
+</tr>
+<tr class="odd">
+<td align="left">8. <strong>Phone numbers</strong> <em>Note: escape the parenthesis <code>\(</code></em> <em>Note: <code>?</code> indicates optionality matching zero or one occurrence</em> 1. <code>\(\d{3}\) \d{3}-\d{4}</code> – Very specific. This works as long as phone numbers are formatted consistently 2. <code>\(?\d+\)? ?[\d-]{5,}\d</code> – more permissive 3. <code>\(?\d+(\)|.)? ?[\d-.]{5,}\d</code> – more permissive still. Allows for <code>.</code> instead of - as a separator</td>
+</tr>
+<tr class="even">
+<td align="left">9. <strong>Email addresses</strong> 1. <code>\w+@[\w\.]+</code> – This rule is quite permissive. It’s likely to match some invalid email addresses. e.g. <a href="mailto:fred@invalid.net">fred@invalid.net</a> It’s also likely to miss valid email addresses like <a href="mailto:luc.small@intersect.org.au">luc.small@intersect.org.au</a> <strong>SUGGESTION</strong>: ask the RegExr community: 1. left-hand sidebar 2. click Community 3. search on the term ‘email’ 4. From there, I found this one <code>([\w\.]+)@([\w\.]+)\.(\w+)</code> Wow! That saved a lot of time and thinking. You can rate useful contributions from the community to privilege useful contributions.</td>
+</tr>
+<tr class="odd">
+<td align="left">10. <strong>Section headings</strong> Note how <code>+</code> can be applied to a group 1. Using the Flag setting of RegExr (upper-left), set to multiline – This enables ^ and $ anchors 2. <code>^(\w+ ?)+$</code> – match repeating words + optional space 3. Reset the multiline flag</td>
+</tr>
+<tr class="even">
+<td align="left">3. <strong>Exercise 2</strong> – To die upon a kiss 1. <strong>Preparation</strong> 1. <a href="http://shakespeare.mit.edu/othello/full.html">Open Othello text in a browser window</a> 2. Copy/Paste full text into RegExr <em>Text</em> panel</td>
+</tr>
+<tr class="odd">
+<td align="left">2. <strong>Exploring honesty</strong> 1. Turn on the case insensitive flag 2. <code>honour</code> – 14 matches 3. <code>honou?r</code> – optional “u” and still 14 matches 4. <code>hon(our|ourable|esty?)</code> – honour honourable, honest, honesty; for 66 matches 5. Turn off case insensitive flag – 61 matches</td>
+</tr>
+<tr class="even">
+<td align="left">3. <strong>Acts and Scenes</strong> 1. Turn on multiline matching 2. <code>^(ACT|SCENE) [IVXLCDM]+</code> – literal word, space, roman numerals; for 20 matches 3. turn off multiline matching</td>
+</tr>
+<tr class="odd">
+<td align="left">4. <strong>Major Parts</strong> 1. Turn on multiline matching 2. <code>^[A-Z]+$</code> 3. turn off multiline matching</td>
+</tr>
+<tr class="even">
+<td align="left">5. <strong>Questions</strong> 1. Turn on multiline matching 2. <code>^.*\?</code> – from start of line to question mark 3. Turn off multiline matching</td>
+</tr>
+<tr class="odd">
+<td align="left">4. <strong>Exercise 3</strong> – Manipulating captured patterns 1. <strong>Preparation</strong> 1. Generate a small list of random names from the <a href="http://listofrandomnames.com/">random name generator</a> 2. Click the “List in text area” button, copy and paste the names list to your buffer 3. Replace the text in the RegExr <em>Text</em> panel with the random names 4. Click the grey <em>Substitution</em> bar at the bottom of RegExr 5. Remove the <code>\n# $&amp;:\n\t</code> code in the <em>Substitution</em> panel</td>
+</tr>
+<tr class="even">
+<td align="left">2. <strong>Capture and manipulate text</strong> <em>In the next steps, </em>notice* how $1 and <span class="math inline">\(2 will be used to recall the text captured within the parenthesis groupings `(` `)`* 1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names 2. `&quot;\)</span>&amp;“<code>-- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane</code>/<code>`/</code>) 3. <code>- $2, $1</code> – swap the order of the first and last name and precede tha whole name with a dash ‘-’ 4. <code>&lt;b&gt;$2&lt;/b&gt;, $1</code> – Bold the last name and add a coma</td>
+</tr>
+<tr class="odd">
+<td align="left">5. <strong>Exercise 4</strong> – Handling twitter data 1. <strong>Preparation</strong> 1. Open this <a href="http://www.regexr.com/3cfee">twitter stream data pre-loaded into RegExr</a> <em>Please note this is actual twitter stream data about a politician, the tweets may be offensive</em> 2. <strong>Capturing #hashtags, <span class="citation">@twitter-handles</span></strong> 1. <code>#\w+</code> – #hastag 2. <code>@\w+</code> – <span class="citation">@twitter-handle</span> 3. <code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="thank-you-for-attending" class="section level2">
 <h2>Thank You for Attending</h2>

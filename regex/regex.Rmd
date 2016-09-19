@@ -171,8 +171,6 @@ A workshop and workbook
 2. `@\w+` -- @twitter-handle
 3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10 
 
-Below the line -- UNDER CONSTRUCTION/RENOVATION.  Check previous [iteration](http://v.gd/intro_regex) if you need to see what was done in Junuary 2016
-
 ---
 
 ## Thank You for Attending

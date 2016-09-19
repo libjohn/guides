@@ -64,7 +64,8 @@ A workshop and workbook
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**  
     i. `avian` -- 2 matches
-    ii.  foo
+    ii. this is nuts
+    ii. foo
 
 
 moo

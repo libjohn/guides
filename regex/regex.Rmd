@@ -66,7 +66,7 @@ A workshop and workbook
     d. Clear the **ignore case** flag  
 
 ### Capitalization & character classes
-2. **Find only capitalized** words<br>*Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*
+2. **Find only capitalized** words<br>*Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*  
      a. `[A-Z]\w*` -- character classes `[` `]` are denoted by square brackets; wildcards include `*` , `+` , `?` <br><img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">  
      b. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*  
      c. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  `\b`  
@@ -83,25 +83,25 @@ A workshop and workbook
      *Note: the pipe character `|`* <br>
      *Note: alternation, alternatives* <br>
      *Note: `(` `)` grouping* <br>
-     *Note `{` `}` multiplier*
+     *Note `{` `}` multiplier*  
     a. `\d\d\d\d` -- a lot of matches here  
     b. `\d{4}` -- more susccinct but has the same meaning as above  
     c. `\b\d{4}\b` -- word boundaries `\b` help but there are still some false positives  
     d. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
-### Phone numbers
-5. Find a phone number<br>
-*Note: escape the parenthesis `\(`*   
-*Note: `?` indicates optionality matching zero or one occurrence*
+### Phone numbers  
+5. Find a phone number<br>  
+*Note: escape the parenthesis `\(`*     
+*Note: `?` indicates optionality matching zero or one occurrence*  
     a. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently  
     b. `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive  
     c. `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for `.` instead of - as a separator  
 
-### Email addresses
-6. `\w+@[\w\.]+`<br>
-*This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net<br>*
-*It's also likely to miss valid email addresses like vincent.zappa@intersect.org.au*   
-			**SUGGESTION**: ask the RegExr community:
+### Email addresses  
+6. `\w+@[\w\.]+`<br>  
+*This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net<br>*  
+*It's also likely to miss valid email addresses like vincent.zappa@intersect.org.au*    
+			**SUGGESTION**: ask the RegExr community:  
     a. left-hand sidebar  
     b. click Community  
     c. search on the term 'email'  

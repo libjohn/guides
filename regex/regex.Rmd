@@ -63,12 +63,13 @@ A workshop and workbook
 ### Whole Words
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**
+*Simple searches are just like traditional find & replace*
    + `avian` -- 2 matches
    + `Avian` -- 12 matches
    + `avian` -- with the ignore case flag -- 14 matches
    + Clear the case insensitive flag   
 
-*Simple searches are just like traditional find & replace*
+
 
 
 

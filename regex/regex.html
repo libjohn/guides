@@ -439,31 +439,7 @@ div.tocify {
 <li><code>@\w+</code> – <span class="citation">@twitter-handle</span></li>
 <li><code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></li>
 </ol>
-<p>Below the line – UNDER CONSTRUCTION/RENOVATION. Check previous <a href="http://v.gd/intro_regex">iteration</a> if you need to see what was done in Junuary 2016 XMXMXMXMXMXMXM———————————————–</p>
-<pre><code>4. **Exercise 3** -- Manipulating captured patterns
-    1. **Preparation**
-        1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
-        2. Click the &quot;List in text area&quot; button, copy and paste the names list to your buffer
-        3. Replace the text in the RegExr *Text* panel with the random names
-        4. Click the grey *Substitution* bar at the bottom of RegExr
-        5. Remove the `\n# $&amp;:\n\t` code in the *Substitution* panel
-        
-    2. **Capture and manipulate text**   
-    *In the next steps, *notice* how $1 and $2 will be used to recall the text captured within the parenthesis groupings `(`  `)`*
-        1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names
-        2. `&quot;$&amp;&quot;` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
-        3. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
-        4. `&lt;b&gt;$2&lt;/b&gt;, $1` -- Bold the last name and add a coma   
-        
-5. **Exercise 4** -- Handling twitter data
-    1. **Preparation**
-        1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)   
-        *Please note this is actual twitter stream data about a politician, the tweets may be offensive*
-    2. **Capturing #hashtags, @twitter-handles**
-        1. `#\w+` -- #hastag
-        2. `@\w+` -- @twitter-handle
-        3. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10   
-    </code></pre>
+<p>Below the line – UNDER CONSTRUCTION/RENOVATION. Check previous <a href="http://v.gd/intro_regex">iteration</a> if you need to see what was done in Junuary 2016</p>
 <hr />
 </div>
 </div>

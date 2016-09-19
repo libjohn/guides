@@ -58,18 +58,18 @@ A workshop and workbook
 ### Whole words
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**  <br>*Simple searches are just like traditional find & replace*
-  i. `avian` -- 2 matches <br><img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
-  ii. `Avian` -- 12 matches
-  iii. `avian` -- with the ignore case flag -- 14 matches <br><img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp;<img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
-  iv. Clear the case insensitive flag   
+    i. `avian` -- 2 matches <br><img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
+    ii. `Avian` -- 12 matches
+    iii. `avian` -- with the ignore case flag -- 14 matches <br><img src="http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0">  &nbsp; &nbsp;<img src="http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E">  &nbsp; &nbsp; <img src="http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0">
+    iv. Clear the case insensitive flag   
 
 ### Capitalization & character classes
 3. **Find only capitalized** words   
 		*Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*
-	  a. `[A-Z]\w*` -- character classes `[` `]` are denoted by square brackets; wildcards include `*` , `+` , `?` <br><img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">
-	  b. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
-	  c. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  `\b`
-	  d. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets `{` `}` allow for arbitrary repetition   
+    i. `[A-Z]\w*` -- character classes `[` `]` are denoted by square brackets; wildcards include `*` , `+` , `?` <br><img src="http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY">
+    ii. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*
+	  iii. `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  `\b`
+	  iv. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets `{` `}` allow for arbitrary repetition   
 
 ### Last word
 4. **Match the last words of sentences**<br>*We can restore a letter's literal meaning by escaping it*

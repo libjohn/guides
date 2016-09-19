@@ -61,10 +61,11 @@ A workshop and workbook
 
 
 1. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)
-    i. `avian` -- 2 matches
-    ii. `Avian` -- 12 matches
-    iii. `avian` -- with the ignore case flag -- 14 matches
-    iv. Clear the case insensitive flag
+     
+     i. `avian` -- 2 matches
+     ii. `Avian` -- 12 matches
+     iii. `avian` -- with the ignore case flag -- 14 matches
+     iv. Clear the case insensitive flag
 
 
         

@@ -41,8 +41,6 @@ A workshop and workbook
 * Closing
 	* Feedback Form
 	* Go forth making expressions and finding patterns with regularity
-
----
  
 ## RegEx -- an Introduction
 * [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) and RegEx
@@ -51,16 +49,13 @@ A workshop and workbook
 * Slides and exercises are shared with permission
 * Please attribute [Intersect](http://www.intersect.org.au/course-resources)
 
- 
----  
-
-## Hands-on
+## Hands-on, Exercise 1
 
 ### RegExr.com
 * Introduction to [RegExr.com](http://regexr.com/) 
 * Exercises derived from Intersect Tutorial on Regular Expressions using RegExr
 
-### Whole Words
+### Whole words
 1. **[Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)** 
 2. **Find all literal words**  <br>*Simple searches are just like traditional find & replace*
     + `avian` -- 2 matches <br><img src="http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk"> &nbsp; &nbsp; <img src="http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo">
@@ -76,7 +71,7 @@ A workshop and workbook
 	  + `\b[A-Z]+\b` -- Because you have to match on a word boundary using an anchor class:  `\b`
 	  + `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets `{` `}` allow for arbitrary repetition   
 
-### Last Word
+### Last word
 4. **Match the last words of sentences**<br>*We can restore a letter's literal meaning by escaping it*
     + `\w+.` -- This doesn't work because "." matches every character
     + `\w+\.` -- We escape the period "." with a the escape character `\`
@@ -93,7 +88,7 @@ A workshop and workbook
     + `\b\d{4}\b` -- word boundaries `\b` help but there are still some false positives
     + `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
-### Phone Numbers
+### Phone numbers
 6. Find a phone number<br>
 *Note: escape the parenthesis `\(`*   
 *Note: `?` indicates optionality matching zero or one occurrence*
@@ -101,7 +96,7 @@ A workshop and workbook
     + `\(?\d+\)? ?[\d-]{5,}\d` -- more permissive
     + `\(?\d+(\)|.)? ?[\d-.]{5,}\d`	   -- more permissive still.  Allows for `.` instead of - as a separator
 
-### Email Addresses
+### Email addresses
 7. `\w+@[\w\.]+` -- This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net   
 			It's also likely to miss valid email addresses like luc.small@intersect.org.au   
 			**SUGGESTION**: ask the RegExr community:
@@ -112,48 +107,55 @@ A workshop and workbook
 				`([\w\.]+)@([\w\.]+)\.(\w+)` <br>   
 				Wow!  That saved a lot of time and thinking.  You can rate useful contributions from the community to privilege useful contributions.
 		  
-### Section Headings
+### Section headings
 8. Note how `+` can be applied to a group  
     + Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors
     + `^(\w+ ?)+$` -- match repeating words + optional space
     + Reset the multiline flag   
 		
 
+## Hands-on, Exercise 2
+
+### Get example text
+#### *To die upon a kiss*
+1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
+2. Copy/Paste full text into [RegExr](http://www.regexr.com/) *Text* panel  
+
+### Alternative spellings & case
+3. Turn on the case insensitive flag
+4. `honour` -- 14 matches
+5. `honou?r` -- optional "u"  and still 14 matches
+6. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty; for 66 matches
+7. Turn off case insensitive flag -- 61 matches
+
+### Alternative letters and multi-line
+8. Turn on multiline matching
+9. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals; for 20 matches
+10. Turn off multiline matching  
+
+### Beginning and ending anchors
+11. Turn on multiline matching
+12. `^[A-Z]+$`
+13. Turn off multiline matching
+
+### Punctuation
+14. Turn on multiline matching
+15. `^.*\?` -- from start of line to question mark
+16. Turn off multiline matching  
+
+## Exercise 3
+
+### 
+### 
 
 
+Below the line -- UNDER CONSTRUCTION/RENOVATION.  Check previous [iteration](http://v.gd/intro_regex) if you need to see what was done in Junuary 2016
 XMXMXMXMXMXMXM-----------------------------------------------
 
 
 
-		9. **Email addresses**
 
-		10. **Section headings**   
-	3. **Exercise 2** -- To die upon a kiss
-		1. **Preparation**   
-			1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
-			2. Copy/Paste full text into RegExr *Text* panel   
-		
-		2. **Exploring honesty**
-			1. Turn on the case insensitive flag
-			2. `honour` -- 14 matches
-			3. `honou?r` -- optional "u"  and still 14 matches
-			4. `hon(our|ourable|esty?)` -- honour honourable, honest, honesty; for 66 matches
-			5. Turn off case insensitive flag -- 61 matches
-		
-		3. **Acts and Scenes**
-			1. Turn on multiline matching
-			2. `^(ACT|SCENE) [IVXLCDM]+` -- literal word, space, roman numerals; for 20 matches
-			3. turn off multiline matching   
 
-		4. **Major Parts**
-			1. Turn on multiline matching
-			2. `^[A-Z]+$`
-			3. turn off multiline matching   
-		
-		5. **Questions**
-			1. Turn on multiline matching
-			2. `^.*\?` -- from start of line to question mark
-			3. Turn off multiline matching   
 		
 	4. **Exercise 3** -- Manipulating captured patterns
 		1. **Preparation**

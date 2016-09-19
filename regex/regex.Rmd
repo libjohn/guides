@@ -73,7 +73,7 @@ A workshop and workbook
      d. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.  Squiggly brackets `{` `}` allow for arbitrary   repetition   
 
 ### Last word
-3. **Match the last words of sentences**<br>*We can restore a letter's literal meaning by escaping it*
+3. **Match the last words of sentences**<br>*We can restore a letter's literal meaning by escaping it*  
     a. `\w+.` -- This doesn't work because "." matches every character  
     b. `\w+\.` -- We escape the period "." with a the escape character `\`  
     c. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using `\s` allows us to stop matching email address by matching   whitespace `\s`  

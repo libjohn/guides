@@ -60,10 +60,10 @@ A workshop and workbook
 * *Simple searches are just like traditional find & replace*
 
 1. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)
-    a. Use `avian` -- 2 matches<br>
-    b. Use `Avian` -- 12 matches
-    c. Use `avian` -- with the **ignore case** flag -- 14 matches
-    d. Clear the **ignore case** flag
+  a. Use `avian` -- 2 matches<br>
+  b. Use `Avian` -- 12 matches
+  c. Use `avian` -- with the **ignore case** flag -- 14 matches
+  d. Clear the **ignore case** flag
 
 ![](http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk)  ![](http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo)
 

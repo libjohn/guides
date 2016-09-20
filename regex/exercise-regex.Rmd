@@ -33,9 +33,13 @@ Find the
 
 1. Reformat the names in the following format:
 
-> Last Name:  <lastname>
--------First Name<tab><firstname>
+> Last Name:  \<lastname\><br>
+> \-\-\-\-\-\-\-First Name\<tab\>\<firstname\>
       
+For Example:  
+
+> Last Name: Dixon    
+> -------First Name \t Odetta  
 
 ### From Exercist Four
 

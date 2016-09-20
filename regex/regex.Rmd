@@ -22,7 +22,7 @@ A workshop and workbook
 * Meet in the /Edge Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
 * Wokrshop History
     * September 2016 [Workbook](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd)
-    * January 2016 [Workbook](http://v.gd/intro_regex) | [Recording](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)
+    * January 2016 [Workbook](http://v.gd/intro_regex) | [Video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)
 
 ## Prerequisites
 * **Bring YOUR Laptop**

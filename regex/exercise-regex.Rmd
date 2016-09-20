@@ -39,7 +39,7 @@ Find the
 For Example:  
 
 > Last Name: Dixon    
-> -------First Name \t Odetta  
+> -------First Name &nbsp; Odetta  
 
 ### From Exercist Four
 

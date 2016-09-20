@@ -1,2 +1,3 @@
 # Introduction to Regular Expressions
-[Latest Version](regex.Rmd)
+
+Please go to the [latest Version](regex.Rmd) of this document

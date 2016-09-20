@@ -129,7 +129,7 @@ A workshop and workbook
 ## Exercise 2 - More Patterns
 
 ### Get example text
-#### *To die upon a kiss*
+
 1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
 2. Copy/Paste full text into [RegExr](http://www.regexr.com/) *Text* panel  
 

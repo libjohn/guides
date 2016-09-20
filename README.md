@@ -4,7 +4,7 @@ Workshop Presentations, Exercises and Guides for [my](https://github.com/libjohn
 ## John's Workshops
 * [Introduction to R](http://htmlpreview.github.com/?https://github.com/libjohn/R-intro-and-reference/blob/master/output/Intro_to_R.html) - an RMarkdown document, it can be found in the [Repository](https://github.com/libjohn/R-intro-and-reference/)
 * [OpenRefine](https://docs.google.com/presentation/d/1YkArEiaws0dMcyFZEppg4eZ7CxvqCTckjY78ao93zIw/edit?usp=sharing) -- a Google Slides presentation and self-study workbook on OpenRefine.  OpenRefine is an OpenSource data science tool for data cleaning, transformation, clustering, editing, augmenting, and more
-* [Regular Expressions](/regex/regex.md) -- a github markdown document that guides students through the [Intersect](http://www.intersect.org.au/course-resources) Introduction to Regular Expressions
+* [Regular Expressions](/regex/regex.Rmd) -- a github markdown document that guides students through the [Intersect](http://www.intersect.org.au/course-resources) Introduction to Regular Expressions
 * [Web Scraping](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit?usp=sharing) -- A Google Slides presentation and self-study workbook on how to scrape data from web sources
 
 ## DVS Workshops

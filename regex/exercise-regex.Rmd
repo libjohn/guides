@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## From Exercise One
 Find the  
+
 1. number of instances of *carrier*  (20)  
 2. number of instnaces of *Carrier*  (16)    
 3. number of instances of *carrier* regardless of case (36)  
@@ -19,12 +20,12 @@ Find the
 
 ## From Exercise Two
 
-1. What does `honesty?` match?  
-  a. the word "honesty"  
-  b. "honest" or "honesty"
-  c. the word "honest" at the end of a question with a "?" punctuation mark
-  d. all of the above
-  e. none of the above
+1. What does `honesty?` match?
+    a. the word "honesty"  
+    b. "honest" or "honesty"  
+    c. the word "honest" at the end of a question with a "?" punctuation mark  
+    d. all of the above  
+    e. none of the above  
   
 ## From Exercise Three
 

@@ -81,8 +81,8 @@ A workshop and workbook
 ### Last word
 3. **Match the last words of sentences**<br>
 *Note* `\w` is a "word"" character<br>
-*Note* \s` is a "space" character<br>
-*Note* `.` is a meta character (intrduced above)
+*Note* `\s` is a "space" character<br>
+*Note* `.` is a meta character (intrduced above)  
     a. `\w+.` -- This doesn't work because "." matches every character  
     b. `\w+\.` -- We escape the period "." with a the escape character `\`  
     c. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using `\s` allows us to stop matching email address by matching   whitespace `\s`  

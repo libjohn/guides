@@ -303,8 +303,12 @@ div.tocify {
 <div id="last-word" class="section level3">
 <h3>Last word</h3>
 <ol start="3" style="list-style-type: decimal">
-<li><strong>Match the last words of sentences</strong><br> <em>Note</em> <code>\w</code> is a “word”&quot; character<br> <em>Note</em> <code>is a &quot;space&quot; character&lt;br&gt; *Note*</code>.<code>is a meta character (intrduced above) a.</code>+.<code>-- This doesn't work because &quot;.&quot; matches every character   b.</code>+.<code>-- We escape the period &quot;.&quot; with a the escape character</code>`
-<ol start="3" style="list-style-type: lower-alpha">
+<li><strong>Match the last words of sentences</strong><br> <em>Note</em> <code>\w</code> is a “word”&quot; character<br> <em>Note</em> <code>\s</code> is a “space” character<br> <em>Note</em> <code>.</code> is a meta character (intrduced above)
+<ol style="list-style-type: lower-alpha">
+<li><code>\w+.</code> – This doesn’t work because “.” matches every character<br />
+</li>
+<li><code>\w+\.</code> – We escape the period “.” with a the escape character <code>\</code><br />
+</li>
 <li><code>\w+\.\s</code> – More precise this time. Matching on 56 words. Using <code>\s</code> allows us to stop matching email address by matching whitespace <code>\s</code></li>
 </ol></li>
 </ol>

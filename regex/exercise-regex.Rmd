@@ -9,18 +9,15 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Whole Words
+## From Exercise One
+Find the  
+1. number of instances of *carrier*  (20)  
+2. number of instnaces of *Carrier*  (16)    
+3. number of instances of *carrier* regardless of case (36)  
+4. number of instances where a four digit number (e.g. 1960) is at the end of a sentence denoted by a period  
+5. Using the following regex `\b[A-Z]{2,3}\b` How accurate do you feel this pattern matches two and three letter abbreviations?  
 
-### From Exercise One
-Find the
-1. number of instances of *carrier*  (20)
-2. number of instnaces of *Carrier*  (16)
-3. number of instances of *carrier* regardless of case (36)
-4. number of instances where a four digit number (e.g. 1960) is at the end of a sentence denoted by a period
-5. Using the following regex `\b[A-Z]{2,3}\b` How accurate do you feel this pattern matches two and three letter abbreviations?
-6. 
-
-### From Exercise Two
+## From Exercise Two
 
 1. What does `honesty?` match?  
   a. the word "honesty"  
@@ -29,7 +26,7 @@ Find the
   d. all of the above
   e. none of the above
   
-### From Exercise Three
+## From Exercise Three
 
 1. Reformat the names in the following format:
 
@@ -41,7 +38,7 @@ For Example:
 > Last Name: Dixon    
 > -------First Name &nbsp; Odetta  
 
-### From Exercist Four
+## From Exercise Four
 
 1. Is there a hashtag that begins with a year?  (e.g. 2016)
 2. What is it?

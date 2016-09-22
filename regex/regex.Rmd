@@ -121,7 +121,7 @@ A workshop and workbook
 ### Section headings
 7. *Note* `+` can be applied to a group<br>
 *Note* `^` prior to a match pattern means *begins with*<br>
-*Note* `$` following a match patterns means *engs with*  
+*Note* `$` following a match patterns means *ends with*  
     a. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors  
     b. `^(\w+ ?)+$` -- match repeating words + optional space  
     c. Reset the multiline flag   

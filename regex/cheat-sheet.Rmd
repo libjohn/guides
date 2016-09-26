@@ -5,12 +5,15 @@ date: "September 26, 2016"
 output: html_document
 ---
 
+A great cheat-sheet:  https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/ 
 
+## Character Classes
 * `\w`  -  word character
 * `\d`  -  digit
 * `\s`  -  space
 * `\b`  -  word boundary
 
+## Wild card
 * `.`  - wild card (matches anything)
 
 ## Multipliers
@@ -20,3 +23,13 @@ output: html_document
 * `{99,99}` -  where 99 is a digit
 
 
+## Groups and Sets
+* `( )` - use with `|` (pipe character) for optionality.  
+    + "a or b" = `(a|b)`.  Can use with String Replacement (below)  
+* `[ ]` - a range of charcters.  
+    + For example characters a through g:  `[a-g]`  
+    + characters "L", "C", "I", and "D":  `[CDLI]`
+
+
+## String Replacement
+* `$n`  - e.g. `$1`, `$2`

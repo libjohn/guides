@@ -1,0 +1,10 @@
+---
+title: "answers to exercises"
+author: "John Little"
+date: "September 26, 2016"
+output: html_document
+---
+
+1. Number of instances of *carrier*  (20)  
+2. Number of instances of *Carrier*  (16)    
+3. Number of instances of *carrier* regardless of case (36)  

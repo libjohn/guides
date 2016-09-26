@@ -12,10 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ## From Exercise One
 Find the  
 
-1. number of instances of *carrier*  (20)  
-2. number of instnaces of *Carrier*  (16)    
-3. number of instances of *carrier* regardless of case (36)  
-4. number of instances where a four digit number (e.g. 1960) is at the end of a sentence denoted by a period  
+1. Number of instances of *carrier*  (20)  
+2. Number of instances of *Carrier*  (16)    
+3. Number of instances of *carrier* regardless of case (36)  
+4. Number of instances where a four digit number (e.g. 1960) is at the end of a sentence denoted by a period  
 5. Using the following regex `\b[A-Z]{2,3}\b` How accurate do you feel this pattern matches two and three letter abbreviations?  
 
 ## From Exercise Two

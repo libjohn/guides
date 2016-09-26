@@ -5,6 +5,22 @@ date: "September 26, 2016"
 output: html_document
 ---
 
-1. Number of instances of *carrier*  (20)  
-2. Number of instances of *Carrier*  (16)    
-3. Number of instances of *carrier* regardless of case (36)  
+## From Exercise One
+
+1. 20
+2. 16    
+3. 36
+
+
+## From Exercise Two
+
+1.  d
+
+
+## From Exercise Three
+
+regex:  `/(\w+) (\w+)/g`
+
+
+`Last Name: Dixon\n
+-------First Name $1`  

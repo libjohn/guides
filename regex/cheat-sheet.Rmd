@@ -32,4 +32,5 @@ A great cheat-sheet:  https://www.cheatography.com/davechild/cheat-sheets/regula
 
 
 ## String Replacement
-* `$n`  - e.g. `$1`, `$2`
+* `$n`  
+    + e.g. `$1`, `$2`

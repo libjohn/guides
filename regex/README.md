@@ -1,5 +1,7 @@
-**Start with the main file** in this sub-repository: [regex.Rmd](/regex/regex.Rmd)
+# Introduction to Regular Expressions
 
-[regex.Rmd](regex.Rmd) is the workbook and presentation guide to the Regular Expressions workshop, part
- of the Data & Visualization Services [Workshop Series](http://library.duke.edu/data/news).  You can find
- other Data & Visualization Services guides on our [Guides page](http://library.duke.edu/data/guides).
+* [Intro to RegEx Workbook](http://libjohn.github.io/regex/regex.html)  
+* [Video of previous workshop](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)  
+* [Mini Cheat sheet](http://libjohn.github.io/regex/cheat-sheet.html)
+* [Exercises](http://libjohn.github.io/regex/exercise-regex.html)  
+    + [Answers](http://libjohn.github.io/regex/answers.html)

@@ -44,7 +44,7 @@ A workshop and workbook
  
 ## RegEx -- an Introduction
 * [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) and RegEx
-* [Slides 3-13](/regex/Intersect PDF Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
+* [Slides 3-13](https://github.com/libjohn/guides/blob/master/regex/Intersect%20PDF%20Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
 * All slides and exercises are the intellectual work of the good folks at Intersect
 * Slides and exercises are shared with permission
 * Please attribute [Intersect](http://www.intersect.org.au/course-resources)
@@ -196,7 +196,7 @@ Duke University Libraries
 	* [DVS Guides Page](http://library.duke.edu/data/guides)
 	* Workshop/Workbook Guides by John Little
 		* [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
-		* [Web Scraping](http://v.gd/webscrapting) -- Gathering Data from the Web
+		* [Web Scraping](http://v.gd/webscraping) -- Gathering Data from the Web
 		* [Regular Expressions (RegEx)](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd) -- Introduction to pattern matching and pattern manipulation
 		
 --- 

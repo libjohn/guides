@@ -9,8 +9,6 @@ output:
     theme: readable
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -19,10 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 A workshop and workbook
 
 * Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news) 
-* Meet in the /Edge Workshop Room  -- [floor map](http://library.duke.edu/edge/spaces)  
-* Workshop History
-    * September 2016 [Workbook](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd)
-    * January 2016 [Workbook](http://v.gd/intro_regex) | [Video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=dd4cd7cc-6aa7-4084-a229-615f3aebe6bd)
+* Recording and workshop materials are available for this and all of our [Past Workshops](http://library.duke.edu/data/news/past-workshops)
 
 ## Prerequisites
 * **Bring YOUR Laptop**
@@ -36,7 +31,7 @@ A workshop and workbook
 	* Presentation:  Slides from the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
 	* Exercises:  Based on slides 15-18
 * Hands-on
-	* Introduction to RegExr
+	* Introduction to RegEx101.com
 	* Exercises
 * Closing
 	* Feedback Form
@@ -51,18 +46,20 @@ A workshop and workbook
 
 ## Exercise 1 - Find Patterns
 
-### RegExr.com
-* Introduction to [RegExr.com](http://regexr.com/) 
-* Exercises derived from Intersect Tutorial on Regular Expressions using RegExr
+### RegEx101
+
+* [RegEx101.com](https://regex101.com/)
+* Exercises derived from Intersect Tutorial on Regular Expressions
 
 ### Whole words
 * *Find all literal words*  
 * *Simple searches are just like traditional find & replace*
 
-1. [Open the example RFC text in RegExr](http://www.regexr.com/3c7gi)  
+1. In a separate tab, [open the example RFC text](https://tools.ietf.org/rfc/rfc2549.txt)
+    a. Paste the text into the RegEx101 **Test String** box  
     a. In the Expression box, enter `avian` -- 2 matches  <br>![](http://www.clipular.com/c/6697213840326656.png?k=Sr4JJIBaQIQrFV_e22vdal35gLk) ...  ![](http://www.clipular.com/c/5482778819821568.png?k=0ABAsScKdMlMhm02iRyZaI6HTFo)  
     b. Use `Avian` -- 12 matches  
-    c. Use `avian` -- with the **ignore case** flag -- 14 matches  <br>![](http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0) ...   ![](http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E) ...  ![](http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0)  
+    c. Use `avian` -- with the **insensitive** case flag -- 14 matches  <br>![](http://www.clipular.com/c/4523633702600704.png?k=2ANfuhKq9-YlXhHskHO6UWvkeZ0) ...   ![](http://www.clipular.com/c/6101324037881856.png?k=6kHKagztUKV9hfLP2f0z64Euk7E) ...  ![](http://www.clipular.com/c/5227111764721664.png?k=J7C2jn8BBj9xTRXVugf8d9K2ui0)  
     d. Clear the **ignore case** flag  
 
 ### Capitalization & character classes
@@ -70,7 +67,7 @@ A workshop and workbook
 [Cheatsheet](http://libjohn.github.io/regex/cheat-sheet.html)
 
 2. **Find only capitalized words**<br>
-**Note** *Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*  <br>
+**Note** *Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`  <br>
 *Note* Character classes `[` `]` are denoted by square brackets<br>
 *Note* wildcard character is the period: `.`<br>
 *Note* multipliers include `*` , `+` , `?`<br>
@@ -110,14 +107,13 @@ A workshop and workbook
 
 ### Email addresses  
 6. `\w+@[\w\.]+`<br>
-*This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net*<br>
-*It's also likely to miss valid email addresses like vincent.zappa@intersect.org.au*<br>
-**SUGGESTION**: ask the RegExr community:  
-    a. left-hand sidebar of RegExr.com  
-    b. click *Community*  
-    c. search on the term 'email'  
-    d. From there, I found this one: <br>   
-				`([\w\.]+)@([\w\.]+)\.(\w+)` <br>   
+*This rule is quite permissive.  It's likely to match some invalid email addresses. e.g. fred@invalid.net* <br>
+*It's also likely to miss valid email addresses like vincent.zappa@intersect.org.au* <br>  
+**SUGGESTION**: ask the RegEx101 community:  
+    a. left-hand sidebar of RegEx101.com  
+    b. click *Regex Library*  
+    c. search on the term 'email address'  
+    d. From there, I found [this pattern](https://regex101.com/library/sI6yF5) <br>   
 				Wow!  That saved a lot of time and thinking.<br>
 				You can rate useful contributions from the community and "privilege" useful contributions.
 		  
@@ -125,7 +121,7 @@ A workshop and workbook
 7. *Note* `+` can be applied to a group<br>
 *Note* `^` prior to a match pattern means *begins with*<br>
 *Note* `$` following a match patterns means *ends with*  
-    a. Using the Flag setting of RegExr (upper-left), set to multiline	-- This enables ^ and $ anchors  
+    a. Using the Flag setting of RegEx101 (upper-right), set to multiline	-- This enables ^ and $ anchors  
     b. `^(\w+ ?)+$` -- match repeating words + optional space  
     c. Reset the multiline flag   
 		
@@ -134,7 +130,7 @@ A workshop and workbook
 ### Get example text
 
 1. [Open Othello text in a browser window](http://shakespeare.mit.edu/othello/full.html) 
-2. Copy/Paste full text into [RegExr](http://www.regexr.com/) *Text* panel  
+2. Paste the text into the RegEx101 **Test String** box
 
 ### Alternative spellings & case
 3. Turn on the case insensitive flag
@@ -163,22 +159,24 @@ A workshop and workbook
 ### Preparation
 1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
 2. Click the "List in text area" button, copy and paste the names list to your buffer
-3. Replace the text in the RegExr *Text* panel with the random names
-4. Click the grey *Substitution* bar at the bottom of RegExr
-5. Remove the `\n# $&:\n\t` code in the *Substitution* panel
+3. Replace the text in the RegEx101 **Test String** box with the random names
+4. Click the *Substitution* care at the bottom of RegEx101 screen
+5. Notice the `$0` code.  
 
 ### Capture Groups
 6. `(\w+) (\w+)` -- in the *Expression* panel will highlight all names
-7. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
+7. `"$0"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
 8. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
 9. `<b>$2</b>, $1` -- Bold the last name and add a coma 
 
 ## Exercise 4 - Special case
 
 ### Preparation
-1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee)
+1. Open this [twitter stream data pre-loaded into RegExr](http://www.regexr.com/3cfee).
 
 *Please note this is actual twitter stream data about a politician, the tweets may be offensive*
+
+You can do this exercise in Regexr.com or copy the textbox data and paste to RegEx101.com
 
 ### Capture #hashtags, @twitter-handles
 2. `#\w+` -- #hastag
@@ -191,16 +189,9 @@ A workshop and workbook
 
 * **Please** complete the paper **Feedback Form** 
 * **Presenter** 
-John Little   
-Data Management & Data Analysis Consultant   
-Data & Visualization Services   
+[John Little](http://libjohn.github.io)
+[Data & Visualization Services](http://library.duke.edu/)   
 Duke University Libraries   
-* **Other Guides & Workbooks**
-	* [DVS Guides Page](http://library.duke.edu/data/guides)
-	* Workshop/Workbook Guides by John Little
-		* [OpenRefine](http://v.gd/openrefine) -- Easy Data Exploration, Data Transformations, Text Normalization, Data Scraping
-		* [Web Scraping](http://v.gd/webscraping) -- Gathering Data from the Web
-		* [Regular Expressions (RegEx)](https://github.com/libjohn/guides/blob/master/regex/regex.Rmd) -- Introduction to pattern matching and pattern manipulation
 		
 --- 
 

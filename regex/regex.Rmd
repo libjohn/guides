@@ -66,6 +66,9 @@ A workshop and workbook
     d. Clear the **ignore case** flag  
 
 ### Capitalization & character classes
+
+[Cheatsheet](http://libjohn.github.io/regex/cheat-sheet.html)
+
 2. **Find only capitalized words**<br>
 **Note** *Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`*  <br>
 *Note* Character classes `[` `]` are denoted by square brackets<br>

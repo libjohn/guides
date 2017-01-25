@@ -33,6 +33,10 @@ Find the
 
 > Last Name:  \<lastname\><br>
 > \-\-\-\-\-\-\-First Name\<tab\>\<firstname\>
+
+hints:  
+new line = `\n`
+tab = `\t`
       
 For Example:  
 
@@ -42,5 +46,6 @@ For Example:
 ## From Exercise Four
 
 1. Is there a hashtag that begins with a year?  (e.g. 2016)
-2. What is it?
+2. Is there a hashtag that begins with any year?  
+3. What is the complete hashtag?
 

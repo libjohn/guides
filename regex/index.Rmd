@@ -27,4 +27,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <iframe height="360" width="640" src="https://warpwire.duke.edu/w/XIgBAA/" frameborder="0" scrolling="0" allowfullscreen></iframe>
 
-Previous Workshops](http://library.duke.edu/data/news/past-workshops)
+&nbsp;
+
+[Previous Workshops](http://library.duke.edu/data/news/past-workshops)

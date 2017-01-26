@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-1. [Slides](http://libjohn.github.io/regex/slides.html)
+1. [Slides](http://libjohn.github.io/regex/slides/)
 
 1. [Demonstration](http://libjohn.github.io/regex/regex.html)
     + [mini cheatsheet](http://libjohn.github.io/regex/cheat-sheet.html)

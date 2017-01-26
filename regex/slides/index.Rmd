@@ -98,9 +98,11 @@ options(htmltools.dir.version = FALSE)
 
     - "color"  & "colour"
     
-    -- 
+--
     
-    - `/colou?r/`  or `/[Cc]olor/`
+    - `/colou?r/` 
+    
+    - `/[Cc]olor/`
 
 ---
 

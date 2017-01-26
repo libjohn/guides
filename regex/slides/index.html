@@ -62,17 +62,21 @@ background-image: url(https://foo.edu/img/apis.png)
 
 --
 
-- Or regular character (literal meaning)
+- Or, a **regular character** (literal meaning)
 
 --
 
 &gt; Duke.
 
-- Matches:  "Duke " and "Dukes", or "Duke1" or "Duke0"
-
-- But not "duke" or "dukes"
-
 - The wildcard '.' matches every character except a newline
+
+--
+
+    - Matches:  "Duke ", "Dukes", "Duke1", "Duke0", ...
+    - Not "duke" or "dukes"
+    - Note the space following "Duke"
+
+--
 
 - You can "escape" a metacharacter to enforce a literal match
 
@@ -100,7 +104,9 @@ background-image: url(https://foo.edu/img/apis.png)
 
     - "color"  &amp; "colour"
     
-    -- `/colou?r/`  or `/[Cc]olor/`
+    -- 
+    
+    - `/colou?r/`  or `/[Cc]olor/`
 
 ---
 

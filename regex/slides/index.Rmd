@@ -60,13 +60,17 @@ options(htmltools.dir.version = FALSE)
 
 --
 
-- `Duke.`
+> Duke.
 
 - Matches:  "Duke " and "Dukes", or "Duke1" or "Duke0"
 
 - But not "duke" or "dukes"
 
-- `.` A wildcard that matches every character except a newline
+- The wildcard '.' matches every character except a newline
+
+- You can "escape" a metacharacter to enforce a literal match
+
+> \\.
 
 ---
 

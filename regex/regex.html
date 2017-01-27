@@ -281,18 +281,31 @@ div.tocify {
 <h3>Capitalization &amp; character classes</h3>
 <p><a href="http://libjohn.github.io/regex/cheat-sheet.html">Cheatsheet</a></p>
 <ol start="2" style="list-style-type: decimal">
-<li><strong>Find only capitalized words</strong></li>
+<li><strong>Find only capitalized words</strong>
+<ol style="list-style-type: lower-alpha">
+<li><code>[A-Z]\w*</code> <img src="data:image/png;base64,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" /><br />
+</li>
+<li><code>[A-Z]+</code> – match only “all caps” words. <strong>BUT</strong> this is not quite right. It doesn’t work. <em>Do you know why?</em><br />
+</li>
+<li><code>\b[A-Z]+\b</code> – match on a word boundary using an anchor class: <code>\b</code><br />
+</li>
+<li><code>\b[A-Z]{2,}\b</code> – Abbreviations are usually 2 or more upper case characters.</li>
+</ol></li>
 </ol>
-<p><strong>Note</strong> <em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code> </em>Note* character classes <code>[</code> <code>]</code> are denoted by square brackets <em>Note</em> wildcard character is the period: <code>.</code> <em>Note</em> multipliers include <code>*</code> , <code>+</code> , <code>?</code> <em>Note</em> Squiggly brackets <code>{</code> <code>}</code> allow for define repetition <em>Note</em> <code>\b</code> is an anchor denoting a word boundary</p>
-<pre><code> a. `[A-Z]\w*` ![](http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY)  
- b. `[A-Z]+` -- match only &quot;all caps&quot; words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*  
- c. `\b[A-Z]+\b` -- match on a word boundary using an anchor class:  `\b`  
- d. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.     </code></pre>
+<p><strong>Note</strong></p>
+<ul>
+<li>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code></li>
+<li>character classes <code>[</code> <code>]</code> are denoted by square brackets</li>
+<li>wildcard character is the period: <code>.</code></li>
+<li>multipliers include <code>*</code> , <code>+</code> , <code>?</code></li>
+<li>Squiggly brackets <code>{</code> <code>}</code> allow for define repetition</li>
+<li><code>\b</code> is an anchor denoting a word boundary</li>
+</ul>
 </div>
 <div id="last-word" class="section level3">
 <h3>Last word</h3>
 <ol start="3" style="list-style-type: decimal">
-<li><strong>Match the last words of sentences</strong><br> <em>Note</em> <code>\w</code> is a “word”&quot; character<br> <em>Note</em> <code>\s</code> is a “space” character<br> <em>Note</em> <code>.</code> is a meta character (introduced above)
+<li><p><strong>Match the last words of sentences</strong></p>
 <ol style="list-style-type: lower-alpha">
 <li><code>\w+.</code> – This doesn’t work because “.” matches every character<br />
 </li>
@@ -301,11 +314,17 @@ div.tocify {
 <li><code>\w+\.\s</code> – More precise this time. Matching on 56 words. Using <code>\s</code> allows us to stop matching email address by matching whitespace <code>\s</code></li>
 </ol></li>
 </ol>
+<p><em>Note</em></p>
+<ul>
+<li><code>\w</code> is a “word”&quot; character</li>
+<li><code>\s</code> is a “space” character</li>
+<li><code>.</code> is a meta character (introduced above)</li>
+</ul>
 </div>
 <div id="numbers" class="section level3">
 <h3>Numbers</h3>
 <ol start="4" style="list-style-type: decimal">
-<li><strong>Find all years</strong><br> <em>Note: the pipe character <code>|</code></em> for alternation, alternatives* <br> <em>Note: <code>(</code> <code>)</code> grouping</em> <br> <em>Note <code>{</code> <code>}</code> multiplier</em>
+<li><p><strong>Find all years</strong></p>
 <ol style="list-style-type: lower-alpha">
 <li><code>\d\d\d\d</code> – a lot of matches here<br />
 </li>
@@ -316,11 +335,17 @@ div.tocify {
 <li><code>\b(19|20)\d\d\b</code> – better and works for the twenties and twenty-first centuries</li>
 </ol></li>
 </ol>
+<p><em>Note</em></p>
+<ul>
+<li>the pipe character <code>|</code> <em>for alternation, alternatives</em></li>
+<li><code>(</code> <code>)</code> grouping</li>
+<li><code>{</code> <code>}</code> multiplier</li>
+</ul>
 </div>
 <div id="phone-numbers" class="section level3">
 <h3>Phone numbers</h3>
 <ol start="5" style="list-style-type: decimal">
-<li>Find a phone number<br> <em>Note: escape the parenthesis <code>\(</code></em><br> <em>Note: <code>?</code> indicates optionality matching zero or one occurrence</em>
+<li><p>Find a phone number</p>
 <ol style="list-style-type: lower-alpha">
 <li><code>\(\d{3}\) \d{3}-\d{4}</code> – Very specific. This works as long as phone numbers are formatted consistently<br />
 </li>
@@ -329,12 +354,16 @@ div.tocify {
 <li><code>\(?\d+(\)|.)? ?[\d-.]{5,}\d</code> – more permissive still. Allows for <code>.</code> instead of - as a separator</li>
 </ol></li>
 </ol>
+<p><em>Note</em></p>
+<ul>
+<li>escape the parenthesis <code>\(</code></li>
+<li>Note: <code>?</code> indicates optionality matching zero or one occurrence</li>
+</ul>
 </div>
 <div id="email-addresses" class="section level3">
 <h3>Email addresses</h3>
 <ol start="6" style="list-style-type: decimal">
-<li><code>\w+@[\w\.]+</code><br> <em>This rule is quite permissive. It’s likely to match some invalid email addresses. e.g. <a href="mailto:fred@invalid.net">fred@invalid.net</a></em> <br> <em>It’s also likely to miss valid email addresses like <a href="mailto:vincent.zappa@intersect.org.au">vincent.zappa@intersect.org.au</a></em> <br><br />
-<strong>SUGGESTION</strong>: ask the RegEx101 community:
+<li><p><code>\w+@[\w\.]+</code></p>
 <ol style="list-style-type: lower-alpha">
 <li>left-hand sidebar of RegEx101.com<br />
 </li>
@@ -346,11 +375,17 @@ div.tocify {
 Wow! That saved a lot of time and thinking.<br> You can rate useful contributions from the community and “privilege” useful contributions.</li>
 </ol></li>
 </ol>
+<p><em>Note</em></p>
+<ul>
+<li>This rule is quite permissive. It’s likely to match some invalid email addresses. e.g. <a href="mailto:fred@invalid.net">fred@invalid.net</a></li>
+<li>It’s also likely to miss valid email addresses like <a href="mailto:vincent.zappa@intersect.org.au">vincent.zappa@intersect.org.au</a></li>
+<li><strong>SUGGESTION</strong>: ask the RegEx101 community</li>
+</ul>
 </div>
 <div id="section-headings" class="section level3">
 <h3>Section headings</h3>
 <ol start="7" style="list-style-type: decimal">
-<li><em>Note</em> <code>+</code> can be applied to a group<br> <em>Note</em> <code>^</code> prior to a match pattern means <em>begins with</em><br> <em>Note</em> <code>$</code> following a match patterns means <em>ends with</em>
+<li><p> </p>
 <ol style="list-style-type: lower-alpha">
 <li>Using the Flag setting of RegEx101 (upper-right), set to multiline – This enables ^ and $ anchors<br />
 </li>
@@ -359,6 +394,12 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <li>Reset the multiline flag</li>
 </ol></li>
 </ol>
+<p><em>Note</em></p>
+<ul>
+<li><code>+</code> can be applied to a group</li>
+<li><code>^</code> prior to a match pattern means begins with</li>
+<li><code>$</code> following a match patterns means ends with</li>
+</ul>
 </div>
 <div id="exercise-1" class="section level3">
 <h3>Exercise 1</h3>

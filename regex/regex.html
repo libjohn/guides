@@ -292,7 +292,7 @@ div.tocify {
 <div id="last-word" class="section level3">
 <h3>Last word</h3>
 <ol start="3" style="list-style-type: decimal">
-<li><strong>Match the last words of sentences</strong><br> <em>Note</em> <code>\w</code> is a “word”&quot; character<br> <em>Note</em> <code>\s</code> is a “space” character<br> <em>Note</em> <code>.</code> is a meta character (intrduced above)
+<li><strong>Match the last words of sentences</strong><br> <em>Note</em> <code>\w</code> is a “word”&quot; character<br> <em>Note</em> <code>\s</code> is a “space” character<br> <em>Note</em> <code>.</code> is a meta character (introduced above)
 <ol style="list-style-type: lower-alpha">
 <li><code>\w+.</code> – This doesn’t work because “.” matches every character<br />
 </li>
@@ -309,7 +309,7 @@ div.tocify {
 <ol style="list-style-type: lower-alpha">
 <li><code>\d\d\d\d</code> – a lot of matches here<br />
 </li>
-<li><code>\d{4}</code> – more susccinct but has the same meaning as above<br />
+<li><code>\d{4}</code> – more succinct but has the same meaning as above<br />
 </li>
 <li><code>\b\d{4}\b</code> – word boundaries <code>\b</code> help but there are still some false positives<br />
 </li>
@@ -434,7 +434,7 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <ol start="6" style="list-style-type: decimal">
 <li><code>(\w+) (\w+)</code> – in the <em>Expression</em> panel will highlight all names</li>
 <li><code>&quot;$0&quot;</code> – in the <em>Substitution</em> pane will reproduce the text pattern matched within forward slashes (<em>Expression</em> pane <code>/</code> <code>/</code>)</li>
-<li><code>- $2, $1</code> – swap the order of the first and last name and precede tha whole name with a dash ‘-’</li>
+<li><code>- $2, $1</code> – swap the order of the first and last name and precede the whole name with a dash ‘-’</li>
 <li><code>&lt;b&gt;$2&lt;/b&gt;, $1</code> – Bold the last name and add a coma</li>
 </ol>
 </div>
@@ -458,7 +458,7 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <div id="capture-hashtags-twitter-handles" class="section level3">
 <h3>Capture #hashtags, <span class="citation">@twitter-handles</span></h3>
 <ol start="2" style="list-style-type: decimal">
-<li><code>#\w+</code> – #hastag</li>
+<li><code>#\w+</code> – #hashtag</li>
 <li><code>@\w+</code> – <span class="citation">@twitter-handle</span></li>
 <li><code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></li>
 </ol>

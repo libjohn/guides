@@ -81,7 +81,7 @@ A workshop and workbook
 3. **Match the last words of sentences**<br>
 *Note* `\w` is a "word"" character<br>
 *Note* `\s` is a "space" character<br>
-*Note* `.` is a meta character (intrduced above)  
+*Note* `.` is a meta character (introduced above)  
     a. `\w+.` -- This doesn't work because "." matches every character  
     b. `\w+\.` -- We escape the period "." with a the escape character `\`  
     c. `\w+\.\s` -- More precise this time.  Matching on 56 words.  Using `\s` allows us to stop matching email address by matching   whitespace `\s`  
@@ -92,7 +92,7 @@ A workshop and workbook
      *Note: `(` `)` grouping* <br>
      *Note `{` `}` multiplier*  
     a. `\d\d\d\d` -- a lot of matches here  
-    b. `\d{4}` -- more susccinct but has the same meaning as above  
+    b. `\d{4}` -- more succinct but has the same meaning as above  
     c. `\b\d{4}\b` -- word boundaries `\b` help but there are still some false positives  
     d. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
@@ -175,7 +175,7 @@ A workshop and workbook
 ### Capture Groups
 6. `(\w+) (\w+)` -- in the *Expression* panel will highlight all names
 7. `"$0"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane `/`     `/`)
-8. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
+8. `- $2, $1` -- swap the order of the first and last name and precede the whole name with a dash '-'
 9. `<b>$2</b>, $1` -- Bold the last name and add a coma 
 
 ### Exercise 3
@@ -193,7 +193,7 @@ A workshop and workbook
 You can do this exercise in Regexr.com or copy the textbox data and paste to RegEx101.com
 
 ### Capture #hashtags, @twitter-handles
-2. `#\w+` -- #hastag
+2. `#\w+` -- #hashtag
 3. `@\w+` -- @twitter-handle
 4. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10 
 

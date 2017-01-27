@@ -1,7 +1,7 @@
 ---
 title: "Intro to Regular Expressions (RegEx)"
 author: "John Little"
-date: "9/14/2016"
+date: "`r Sys.Date()`"
 output:
   html_document:
     highlight: pygments
@@ -16,6 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 A workshop and workbook
 
+
+* [Slides, exercises and answers](../)
 * Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news) 
 * Recording and workshop materials are available for this and all of our [Past Workshops](http://library.duke.edu/data/news/past-workshops)
 
@@ -27,22 +29,17 @@ A workshop and workbook
 ## Outline
 * Data & Visualization Services
 	* Who We Are
-* This workshop is **completely based on the good work from [Intersect](http://www.intersect.org.au/course-resources)** in Australia
-	* Presentation:  Slides from the [Intersect Slide Deck](http://www.intersect.org.au/course-resources)
-	* Exercises:  Based on slides 15-18
+* This workshop is **inspired by the good work at [Intersect](http://www.intersect.org.au/course-resources)** in Australia and the excellent introduction at [Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)
 * Hands-on
-	* Introduction to RegEx101.com
+	* Introduction to [RegEx101.com](https://regex101.com/)
 	* Exercises
 * Closing
 	* Feedback Form
-	* Go forth making expressions and finding patterns with regularity
+	* Go forth expressionful, finding patterns with alacrity
  
 ## RegEx -- an Introduction
-* [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) and RegEx
-* [Slides 3-13](https://github.com/libjohn/guides/blob/master/regex/Intersect%20PDF%20Materials/Slides.pdf) from [Intersect](http://www.intersect.org.au/course-resources)
-* All slides and exercises are the intellectual work of the good folks at Intersect
-* Slides and exercises are shared with permission
-* Please attribute [Intersect](http://www.intersect.org.au/course-resources)
+
+* [Slides](slides/)
 
 ## Exercise 1 - Find Patterns
 
@@ -66,13 +63,15 @@ A workshop and workbook
 
 [Cheatsheet](http://libjohn.github.io/regex/cheat-sheet.html)
 
-2. **Find only capitalized words**<br>
-**Note** *Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`<br>
-*Note* character classes `[` `]` are denoted by square brackets<br>
-*Note* wildcard character is the period: `.`<br>
-*Note* multipliers include `*` , `+` , `?`<br>
-*Note* Squiggly brackets `{` `}` allow for define repetition<br>
+2. **Find only capitalized words**
+
+**Note** *Some characters don't have a literal meaning, these are known as meta characters:  e.g. `"` or `[`
+*Note* character classes `[` `]` are denoted by square brackets
+*Note* wildcard character is the period: `.`
+*Note* multipliers include `*` , `+` , `?`
+*Note* Squiggly brackets `{` `}` allow for define repetition
 *Note* `\b` is an anchor denoting a word boundary  
+
      a. `[A-Z]\w*` ![](http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY)  
      b. `[A-Z]+` -- match only "all caps" words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*  
      c. `\b[A-Z]+\b` -- match on a word boundary using an anchor class:  `\b`  
@@ -124,6 +123,11 @@ A workshop and workbook
     a. Using the Flag setting of RegEx101 (upper-right), set to multiline	-- This enables ^ and $ anchors  
     b. `^(\w+ ?)+$` -- match repeating words + optional space  
     c. Reset the multiline flag   
+    
+### Exercise 1
+
+* [Exercise 1](exercise-regex.html)
+
 		
 ## Exercise 2 - More Patterns
 
@@ -154,6 +158,11 @@ A workshop and workbook
 15. `^.*\?` -- from start of line to question mark
 16. Turn off multiline matching  
 
+### Exercise 2
+
+* [Exercise 2](exercise-regex.html)
+
+
 ## Exercise 3 - Replace
 
 ### Preparation
@@ -169,6 +178,11 @@ A workshop and workbook
 8. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
 9. `<b>$2</b>, $1` -- Bold the last name and add a coma 
 
+### Exercise 3
+
+* [Exercise 3](exercise-regex.html)
+
+
 ## Exercise 4 - Special case
 
 ### Preparation
@@ -183,20 +197,27 @@ You can do this exercise in Regexr.com or copy the textbox data and paste to Reg
 3. `@\w+` -- @twitter-handle
 4. `@[A-Za-z]\w+` -- avoids matching times, e.g. @kairos we're meeting for drinks @10 
 
+
+### Exercise 4
+
+* [Exercise 4](exercise-regex.html)
+
 ---
 
 ## Thank You for Attending
 
 * **Please** complete the paper **Feedback Form** 
+
 * **Presenter** 
-[John Little](http://libjohn.github.io)
-[Data & Visualization Services](http://library.duke.edu/)   
-Duke University Libraries   
+
+    - [John Little](http://libjohn.github.io)
+    - [Data & Visualization Services](http://library.duke.edu/)   
+    - Duke University Libraries   
 		
 --- 
 
-### Shareable under CC BY-NC-SA license 
+### Shareable under CC BY-NC license 
 
-Data, presentation, and handouts are shareable under [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Data, presentation, and handouts are shareable under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/)
 
-![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License")
+![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc/4.0/88x31.png "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International CC BY-NC 4.0 License")

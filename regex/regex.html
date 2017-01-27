@@ -11,6 +11,7 @@
 
 <meta name="author" content="John Little" />
 
+<meta name="date" content="2017-01-27" />
 
 <title>Intro to Regular Expressions (RegEx)</title>
 
@@ -201,13 +202,14 @@ div.tocify {
 
 <h1 class="title toc-ignore">Intro to Regular Expressions (RegEx)</h1>
 <h4 class="author"><em>John Little</em></h4>
-<h4 class="date"><em>9/14/2016</em></h4>
+<h4 class="date"><em>2017-01-27</em></h4>
 
 </div>
 
 
 <p>A workshop and workbook</p>
 <ul>
+<li><a href="../">Slides, exercises and answers</a></li>
 <li>Part of the <a href="http://library.duke.edu/data">Data &amp; Visualization Services</a> – <a href="http://library.duke.edu/data/news">Workshop Series</a></li>
 <li>Recording and workshop materials are available for this and all of our <a href="http://library.duke.edu/data/news/past-workshops">Past Workshops</a></li>
 </ul>
@@ -225,31 +227,23 @@ div.tocify {
 <ul>
 <li>Who We Are</li>
 </ul></li>
-<li>This workshop is <strong>completely based on the good work from <a href="http://www.intersect.org.au/course-resources">Intersect</a></strong> in Australia
-<ul>
-<li>Presentation: Slides from the <a href="http://www.intersect.org.au/course-resources">Intersect Slide Deck</a></li>
-<li>Exercises: Based on slides 15-18</li>
-</ul></li>
+<li>This workshop is <strong>inspired by the good work at <a href="http://www.intersect.org.au/course-resources">Intersect</a></strong> in Australia and the excellent introduction at <a href="https://en.wikipedia.org/wiki/Regular_expression">Wikipedia</a></li>
 <li>Hands-on
 <ul>
-<li>Introduction to RegEx101.com</li>
+<li>Introduction to <a href="https://regex101.com/">RegEx101.com</a></li>
 <li>Exercises</li>
 </ul></li>
 <li>Closing
 <ul>
 <li>Feedback Form</li>
-<li>Go forth making expressions and finding patterns with regularity</li>
+<li>Go forth expressionful, finding patterns with alacrity</li>
 </ul></li>
 </ul>
 </div>
 <div id="regex-an-introduction" class="section level2">
 <h2>RegEx – an Introduction</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Regular_expression">Regular Expressions</a> and RegEx</li>
-<li><a href="https://github.com/libjohn/guides/blob/master/regex/Intersect%20PDF%20Materials/Slides.pdf">Slides 3-13</a> from <a href="http://www.intersect.org.au/course-resources">Intersect</a></li>
-<li>All slides and exercises are the intellectual work of the good folks at Intersect</li>
-<li>Slides and exercises are shared with permission</li>
-<li>Please attribute <a href="http://www.intersect.org.au/course-resources">Intersect</a></li>
+<li><a href="slides/">Slides</a></li>
 </ul>
 </div>
 <div id="exercise-1---find-patterns" class="section level2">
@@ -287,17 +281,13 @@ div.tocify {
 <h3>Capitalization &amp; character classes</h3>
 <p><a href="http://libjohn.github.io/regex/cheat-sheet.html">Cheatsheet</a></p>
 <ol start="2" style="list-style-type: decimal">
-<li><strong>Find only capitalized words</strong><br> <strong>Note</strong> <em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code><br> </em>Note* character classes <code>[</code> <code>]</code> are denoted by square brackets<br> <em>Note</em> wildcard character is the period: <code>.</code><br> <em>Note</em> multipliers include <code>*</code> , <code>+</code> , <code>?</code><br> <em>Note</em> Squiggly brackets <code>{</code> <code>}</code> allow for define repetition<br> <em>Note</em> <code>\b</code> is an anchor denoting a word boundary
-<ol style="list-style-type: lower-alpha">
-<li><code>[A-Z]\w*</code> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAAA4CAYAAAAW/KEGAAAIOUlEQVR4Xu2df1BU1xXHP8uvFRRYEFgkBhRSEKwr2MB0zI+xTUhoTFIzg21SYzWxU5tCJm2jtlNbS3ToJJg2yURqa8dJM4naDjQy08ShkabUhJqBGBAD8QdI/AnIbxDYhYXtPFyWhd1lH+xFQ+e+v2Deu+ed+72fe865Z9lB093dY0FeUgEPFdBIkDxUUA4fUUCCJEEQooAESYiM0ogESTIgRAEJkhAZpREJkmRAiAISJCEySiMSJMmAEAUkSEJklEYkSJIBIQpIkITIKI1IkCQDQhSQIAmRURqRIEkGhCggQRIiozQiQZIMCFHgpoHk41MsxOFbZcRszrhVr54V75UgqVwmCdLkQkmQJEgqFZAgCRFKRqQvG0inD9P4t4PjvNLct4/Iu0OELPi0jDjxyee7BYQvGbMmQbolIA3SUHWSJqM3urjlJIZ7YSu2ZytInWZaX3sCS/Be5mU/if+0iPV80MAXn3GiyYh38CLuTAzDy3OTQizMTI3U28Cnp9oweetISL2DUHAAyV0U6nx/H1Frjo5MUv98Dp/vWsqcqU65qYzvxL7Ku07HpfLm+W2sjZxw0wq6Y0RaRfehcEzn78d302F0E8dN1Tfb814M9HlBgBk/tzb6qKuspcXkTUh8CksUYb8k14yA1FtfTXXLANrwJFbEBYxMdWJEmhykXt5/diNr9ltV0q+h+PN13DtVkiYDSZ9OUeUPeUCnFqQMzDU76Ch6BQxlhD9iELSEWvZs8oWt18m2S6VOjY9uUO18DCmLmSvIAxFmZgCkDk5X1NMx5Ef4MgN3WGc7JZA6K3k26rfsNzxEVuoR8vfr2Fn6Z7akeThlYw1bE3PIb9aRVZzP7nudxACXEUnpI5XTnnsfQ9oX8d+SxbwJ7hg/eJye4+9B1DsEP5WOqSAQ49mn0T73GkFXfk9L4W9Af4igHzyMdnRsqz/bfu5NtAqQ2s9UcqZjaNwGHTEz3E/juXoudRoZcvi6qw/zk5KJD/JQOzfDxYPUWkd5XSdDAZF8zbDQFq6nApLx2BuEZhxBvzOX0pgiEjdUjPzcsCXeAzWuUfD97Wwo7CR1Zy7/3BLvPFVOChJc/8dK+qub8V5TQ+jS8SFyuGYHbUrEmruXuT+5h4E9X2Wwaxk+T/4X/yuP0/Pv9yCpjPDH7uRgth/F0cM8ejsUl3jhlzpEcr8XH52GzJxeHl0wcartnK44T8eQP1ErlhJj2wPDNNVW0tDt6gvTsxKksUkFRC1nebSvTQ31IA1wbOs6MvIhq/gAu2PKeDDxD3yo/x6lDY9xIyidpeWF7ZhdYDWxvlEeu/BWLombqyB1I8f/s5rlrpB0AxJX3qblL89A7BFCnrgHH3s7rYW0/ukpLLyA//a7GVCiF+D1rUv4X3mI3upTaL5RR9jK26gr9ePFQ17UT5hEXMoQO57uJ/pGRWC7hpvPUN7Qg2XCBoUezp44Q9sg+IbEkZwQgvliDVVX+7HMicCQHH1TUqDYiDR8jZqKi3QTyOLUBCLtjhSqQVLST2gO+aRTdFWpYRrY8/VtbKu2T29TA8lYfpgHVx2kQr+SN0t/ytqYSQKbO5C4QOdIpFmH33N/JHhcfrOmPlbjm5mJubAE9AewRJehbbsL03nwzuwhNMH6/j4t+3J8OdSm/G4h65cmMuOcbY/RDQpBi1NYqh9/Vuuqr6K2xck4B+g8COg3M7UNXKzhxNV+NEHRpCVFjDuaqgVpNK0583ta6c2uLtpU9CqvP+CmRHULEgyU/4iuowfQpF8iLM2+Wh+FLALvpCyG6rX4xPwCs3kvvl3PMNi2Gt/Nf0UXZp1doz8//pU3dUpYM0PyehN5qwYdpz5wmZOfNtGncdygIw+bLnOyUrmvAYuS4jT4BuiITogjwlaMzRxEimWBEWmsd+TsaKoOpLG05nTaho0c/3iStOQwSGVdZD9OBUhcf9dlT6lnpMAGjX4dFh7GP+lt+qvnoGn7uzXl/cxapPvyQa6WXa3D5OeaoHAOWWUWXnqlj7QJac3WOwqJIy3BsXHb+NknfHHdh5B4A0tCb01nSRxITnpH9uujCiRjDb9OzOF3zTqeL85n1+ipynaMX0Te8d1kuyxwxpPUVJBH7IYKl1txZ2mB40lQDUgYXfaUbCc35a1KYZ1UcuO0plzBbxCYnXmjyB/0o3iPD6zvJyNMiSJ+HMzxIXKziW8uUCqr0ct976ip9oTTYluj8SNwYSyJt82b8calMJC6zlVR22Z2PJpa9VADkvHYARIzimh26Btd461vZ7H5KBjy8vg4e7GqOF3+8lpW7XD96PRBYlxPaf4jBttC2U5uSrhXCuv4D60FOBD/L+avTZvaonbX80ltB4OT9I7M7XVUne3ESVIcAVS/zEDsDDedBIE01jty5bQakFTRMdMPqYpIihPVdLx8F2ac95REuWnrHUUksSJ2Qs5TXmJXPy1K+QoL/JTUZsbYWE/VhR4sswokF72jyVKb/T13H5eIWhSXdqb5oe1kPSUxPrvqHdlZ771I5alrGF280DvodpKT9Co+fvHMYwERyXXv6P8dJFtPKfoddOvTGeuaebYoo6Nd947G2ze2NHDucju9Jgs32pIaNNoAQiMXErsgcHyvS4xrDlYEgKTOM/mntup0mq1P3TSQZqtA0m91CkiQ1Okkn3KjgARJIiJEAQmSEBmlEQmSZECIAhIkITJKIxIkyYAQBSRIQmSURiRIkgEhCkiQhMgojUiQJANCFJAgCZFRGpEgSQaEKCBBEiKjNCJBkgwIUUCCJERGaUSCJBkQooAESYiM0oimpOQj+e/aJQceK/A/F/pRqtS0HTcAAAAASUVORK5CYII=" /><br />
-</li>
-<li><code>[A-Z]+</code> – match only “all caps” words. <strong>BUT</strong> this is not quite right. It doesn’t work. <em>Do you know why?</em><br />
-</li>
-<li><code>\b[A-Z]+\b</code> – match on a word boundary using an anchor class: <code>\b</code><br />
-</li>
-<li><code>\b[A-Z]{2,}\b</code> – Abbreviations are usually 2 or more upper case characters.</li>
-</ol></li>
+<li><strong>Find only capitalized words</strong></li>
 </ol>
+<p><strong>Note</strong> <em>Some characters don’t have a literal meaning, these are known as meta characters: e.g. <code>&quot;</code> or <code>[</code> </em>Note* character classes <code>[</code> <code>]</code> are denoted by square brackets <em>Note</em> wildcard character is the period: <code>.</code> <em>Note</em> multipliers include <code>*</code> , <code>+</code> , <code>?</code> <em>Note</em> Squiggly brackets <code>{</code> <code>}</code> allow for define repetition <em>Note</em> <code>\b</code> is an anchor denoting a word boundary</p>
+<pre><code> a. `[A-Z]\w*` ![](http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY)  
+ b. `[A-Z]+` -- match only &quot;all caps&quot; words.  **BUT** this is not quite right.  It doesn't work.  *Do you know why?*  
+ c. `\b[A-Z]+\b` -- match on a word boundary using an anchor class:  `\b`  
+ d. `\b[A-Z]{2,}\b` -- Abbreviations are usually 2 or more upper case characters.     </code></pre>
 </div>
 <div id="last-word" class="section level3">
 <h3>Last word</h3>
@@ -370,6 +360,12 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 </ol></li>
 </ol>
 </div>
+<div id="exercise-1" class="section level3">
+<h3>Exercise 1</h3>
+<ul>
+<li><a href="exercise-regex.html">Exercise 1</a></li>
+</ul>
+</div>
 </div>
 <div id="exercise-2---more-patterns" class="section level2">
 <h2>Exercise 2 - More Patterns</h2>
@@ -414,6 +410,12 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <li>Turn off multiline matching</li>
 </ol>
 </div>
+<div id="exercise-2" class="section level3">
+<h3>Exercise 2</h3>
+<ul>
+<li><a href="exercise-regex.html">Exercise 2</a></li>
+</ul>
+</div>
 </div>
 <div id="exercise-3---replace" class="section level2">
 <h2>Exercise 3 - Replace</h2>
@@ -436,6 +438,12 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <li><code>&lt;b&gt;$2&lt;/b&gt;, $1</code> – Bold the last name and add a coma</li>
 </ol>
 </div>
+<div id="exercise-3" class="section level3">
+<h3>Exercise 3</h3>
+<ul>
+<li><a href="exercise-regex.html">Exercise 3</a></li>
+</ul>
+</div>
 </div>
 <div id="exercise-4---special-case" class="section level2">
 <h2>Exercise 4 - Special case</h2>
@@ -454,22 +462,33 @@ Wow! That saved a lot of time and thinking.<br> You can rate useful contribution
 <li><code>@\w+</code> – <span class="citation">@twitter-handle</span></li>
 <li><code>@[A-Za-z]\w+</code> – avoids matching times, e.g. <span class="citation">@kairos</span> we’re meeting for drinks <span class="citation">@10</span></li>
 </ol>
+</div>
+<div id="exercise-4" class="section level3">
+<h3>Exercise 4</h3>
+<ul>
+<li><a href="exercise-regex.html">Exercise 4</a></li>
+</ul>
 <hr />
 </div>
 </div>
 <div id="thank-you-for-attending" class="section level2">
 <h2>Thank You for Attending</h2>
 <ul>
-<li><strong>Please</strong> complete the paper <strong>Feedback Form</strong></li>
-<li><strong>Presenter</strong> <a href="http://libjohn.github.io">John Little</a> <a href="http://library.duke.edu/">Data &amp; Visualization Services</a><br />
-Duke University Libraries</li>
+<li><p><strong>Please</strong> complete the paper <strong>Feedback Form</strong></p></li>
+<li><p><strong>Presenter</strong></p>
+<ul>
+<li><a href="http://libjohn.github.io">John Little</a></li>
+<li><a href="http://library.duke.edu/">Data &amp; Visualization Services</a><br />
+</li>
+<li>Duke University Libraries</li>
+</ul></li>
 </ul>
 <hr />
-<div id="shareable-under-cc-by-nc-sa-license" class="section level3">
-<h3>Shareable under CC BY-NC-SA license</h3>
-<p>Data, presentation, and handouts are shareable under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA license</a></p>
+<div id="shareable-under-cc-by-nc-license" class="section level3">
+<h3>Shareable under CC BY-NC license</h3>
+<p>Data, presentation, and handouts are shareable under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a></p>
 <div class="figure">
-<img src="data:image/png;base64,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" title="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" alt="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." />
+<img src="data:image/png;base64,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" title="This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International CC BY-NC 4.0 License" alt="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." />
 <p class="caption">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
 </div>
 </div>

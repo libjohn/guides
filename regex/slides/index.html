@@ -4,7 +4,7 @@
     <title>Regex</title>
     <meta charset="utf-8">
     <meta name="author" content="John Little" />
-    <meta name="date" content="2017-01-26" />
+    <meta name="date" content="2017-01-31" />
     <link href="libs/remark-css/example.css" rel="stylesheet" />
   </head>
   <body>
@@ -14,7 +14,7 @@ class: center, middle, inverse, title-slide
 # Regex
 ## A DVS Workshop <br> <a href="http://library.duke.edu/data/news" class="uri">http://library.duke.edu/data/news</a>
 ### John Little
-### 2017-01-26
+### 2017-01-31
 
 ---
 
@@ -73,8 +73,8 @@ background-image: url(https://foo.edu/img/apis.png)
 --
 
     - Matches:  "Duke ", "Dukes", "Duke1", "Duke0", ...
-    - Not "duke" or "dukes"
     - Note the space following "Duke"
+    - Not "duke" or "dukes"
 
 --
 
@@ -102,13 +102,17 @@ background-image: url(https://foo.edu/img/apis.png)
 
 - Common regex used to locate same word spelled two different ways
 
-    - "color"  &amp; "colour"
+    - match "color" and "colour"
     
 --
     
-    - `/colou?r/` 
+        - `/colou?r/` 
     
-    - `/[Cc]olor/`
+--
+
+    - match "color" and "Color"
+    
+        - `/[Cc]olor/`
 
 ---
 
@@ -145,7 +149,7 @@ background-image: url(https://foo.edu/img/apis.png)
 
 - But ...
 
----
+--
 
 ## Regex *is not* Machine Learning
 

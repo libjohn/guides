@@ -67,8 +67,8 @@ options(htmltools.dir.version = FALSE)
 --
 
     - Matches:  "Duke ", "Dukes", "Duke1", "Duke0", ...
-    - Not "duke" or "dukes"
     - Note the space following "Duke"
+    - Not "duke" or "dukes"
 
 --
 
@@ -96,13 +96,17 @@ options(htmltools.dir.version = FALSE)
 
 - Common regex used to locate same word spelled two different ways
 
-    - "color"  & "colour"
+    - match "color" and "colour"
     
 --
     
-    - `/colou?r/` 
+        - `/colou?r/` 
     
-    - `/[Cc]olor/`
+--
+
+    - match "color" and "Color"
+    
+        - `/[Cc]olor/`
 
 ---
 
@@ -139,7 +143,7 @@ options(htmltools.dir.version = FALSE)
 
 - But ...
 
----
+--
 
 ## Regex *is not* Machine Learning
 

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 A workshop and workbook
 
 
-* [Slides, exercises and answers](../)
+* [Slides, exercises and answers](http://www.johnlittle.info/publication/regex/)
 * Part of the [Data & Visualization Services](http://library.duke.edu/data) -- [Workshop Series](http://library.duke.edu/data/news) 
 * Recording and workshop materials are available for this and all of our [Past Workshops](http://library.duke.edu/data/news/past-workshops)
 

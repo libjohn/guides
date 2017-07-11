@@ -61,7 +61,7 @@ A workshop and workbook
 
 ### Capitalization & character classes
 
-[Cheatsheet](http://libjohn.github.io/regex/cheat-sheet.html)
+[Cheatsheet](http://www.johnlittle.info/project/custom/regex/cheat-sheet.html)
 
 2. **Find only capitalized words**
      a. `[A-Z]\w*` ![](http://www.clipular.com/c/4898985692102656.png?k=IPiLHHWl3MWUjXTW0gbaLf5j_pY)  
@@ -240,7 +240,7 @@ You can do this exercise in Regexr.com or copy the textbox data and paste to Reg
 
 * **Presenter** 
 
-    - [John Little](http://libjohn.github.io)
+    - [John Little](http://www.johnlittle.info)
     - [Data & Visualization Services](http://library.duke.edu/)   
     - Duke University Libraries   
 		
